@@ -8,15 +8,32 @@ redirect_from:
   - /about.html
 ---
 
-<span class='anchor' id='about-me'></span>
-{% include_relative includes/intro.md %}
+<section class="academic-section intro-section" id="about-me">
+<div class="section-kicker">RESEARCH &amp; ACADEMIC PROFILE</div>
+{% capture intro %}{% include_relative includes/intro.md %}{% endcapture %}
+{{ intro | markdownify }}
+<div class="research-tags"><span>Hardware Security</span><span>Physical Unclonable Functions</span><span>Printed Electronics</span><span>AI Authentication</span></div>
+</section>
 
 <!--If you like the template of this homepage, welcome to star and fork my open-sourced template version [AcadHomepage ![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io?style=social)](https://github.com/RayeRen/acad-homepage.github.io).-->
 
-{% include_relative includes/news.md %}
+<section class="academic-section news-section" id="news">
+{% capture news %}{% include_relative includes/news.md %}{% endcapture %}
+{{ news | markdownify }}
+</section>
 
-{% include_relative includes/pub.md %}
+<section class="academic-section publications-section" id="publications">
+{% capture publications %}{% include_relative includes/pub.md %}{% endcapture %}
+{{ publications | markdownify }}
+</section>
 
-{% include_relative includes/honers.md %}
+<section class="academic-section honors-section" id="honors">
+{% capture honors %}{% include_relative includes/honers.md %}{% endcapture %}
+{{ honors | markdownify }}
+</section>
 
-{% include_relative includes/others.md %}
+<section class="academic-section education-section" id="education">
+{% capture education %}{% include_relative includes/others.md %}{% endcapture %}
+{{ education | markdownify }}
+</section>
+<footer class="academic-footer">{{ site.author.name }} <span>·</span> {{ site.author.location }} <span>·</span> <a href="mailto:{{ site.author.email }}">Get in touch ↗</a></footer>
