@@ -22,7 +22,7 @@ google_scholar_stats_use_cdn : true
 # Site Author
 author:
   name             : "Renchao Li (李仁超)"
-  avatar           : "images/github_avatar_1024x1024.jpg"
+  avatar           : "images/wechat_avatar_1024x1024.jpg"
   bio              : "Research focus on Hardware Security, Physical Unclonable Function (PUF), Printed Electronics and AI Authentication."
   location         : "Shenzhen"
   employer         :

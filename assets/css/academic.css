@@ -15,8 +15,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid #087f82; outline-offs
 #main::after, #main::before { display: none; }
 #main .sidebar { float: none; width: auto; margin: 0; padding: 0; position: sticky; top: 106px; align-self: start; opacity: 1; max-height: calc(100vh - 120px); overflow-y: auto; }
 .profile_box { display: block; background: white; border: 1px solid var(--line); border-radius: 18px; padding: 24px; box-shadow: 0 12px 40px rgba(25,50,77,.04); }
-.profile_box .author__avatar { display: block; width: 100%; }
-.profile_box .author__avatar img { display: block; width: 100%; max-width: none; min-width: 0; aspect-ratio: 1; height: auto; padding: 0; border: 0; border-radius: 12px; object-fit: cover; }
+.profile_box div.author__avatar { display: block; width: 100%; aspect-ratio: 1; overflow: hidden; border: 5px solid white; border-radius: 50%; box-shadow: 0 0 0 1px var(--line), 0 8px 24px rgba(25,50,77,.08); }
+.profile_box .author__avatar img { display: block; width: 100%; max-width: none; min-width: 0; aspect-ratio: 1; height: auto; padding: 0; border: 0; border-radius: 50%; object-fit: cover; }
 .profile_box .author__content { display: block; width: auto; padding: 0; }
 .profile_box .author__name { font-family: inherit; color: var(--ink); font-size: 23px; line-height: 1.5; margin-top: 20px; }
 .profile_box .author__bio { color: var(--muted); font-family: inherit; font-size: 13px; line-height: 1.85; margin: 12px 0 20px; }
