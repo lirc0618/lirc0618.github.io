@@ -15,8 +15,6 @@ redirect_from:
 <div class="research-tags"><span>Hardware Security</span><span>Physical Unclonable Functions</span><span>Printed Electronics</span><span>AI Authentication</span></div>
 </section>
 
-<!--If you like the template of this homepage, welcome to star and fork my open-sourced template version [AcadHomepage ![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io?style=social)](https://github.com/RayeRen/acad-homepage.github.io).-->
-
 <section class="academic-section news-section" id="news">
 {% capture news %}{% include_relative includes/news.md %}{% endcapture %}
 {{ news | markdownify }}

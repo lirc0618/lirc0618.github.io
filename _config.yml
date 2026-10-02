@@ -1,15 +1,8 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
 # Site Settings
 title                    : "Renchao Li (李仁超)"
 description              : "PhD candidate in HIT"
+url                      : "https://lirc0618.github.io"
 repository               : "lirc0618/lirc0618.github.io"
-google_scholar_stats_use_cdn : true
 
 # google analytics
 # google_analytics_id      : G-SWFCX99KQZ
@@ -25,45 +18,13 @@ author:
   avatar           : "images/wechat_avatar_1024x1024.jpg"
   bio              : "Research focus on Hardware Security, Physical Unclonable Function (PUF), Printed Electronics and AI Authentication."
   location         : "Shenzhen"
-  employer         :
-  pubmed           : 
-  googlescholar    :  #"https://scholar.google.com/citations?user=4FA6C0AAAAAJ"
   email            : "lirc@stu.hit.edu.cn"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
   github           : "lirc0618"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         : #"rayeren"
-  dblp             : #"https://dblp.org/pid/75/6568-6.html"
   orcid            : "https://orcid.org/0009-0008-7293-2583"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : 
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
-
 
 # Reading Files
 include:
-  - .htaccess
   - _pages
-  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -78,7 +39,9 @@ exclude:
   - LICENSE
   - README
   - Rakefile
+  - README.md
   - assets/js/_main.js
+  - run_server.sh
   - assets/js/plugins
   - assets/js/vendor
   - config
@@ -88,8 +51,6 @@ exclude:
   - package.json
   - tmp
   - vendor
-  - google_scholar_crawler
-  - github_myprofile_updater
 keep_files:
   - .git
   - .svn
@@ -140,23 +101,9 @@ timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_
 
 # Plugins
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
   - jekyll-redirect-from
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+  - jekyll-redirect-from

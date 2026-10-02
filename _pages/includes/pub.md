@@ -1,7 +1,4 @@
-
 # 📝 Publications 
-## 📚 Journal Articles
-
 ## 🎙 Conference
 
 - ``AsianHOST 2023`` [A Lightweight Authentication Scheme with PE-Based Unclonable Label](https://ieeexplore.ieee.org/document/10409427/)<br>
@@ -15,5 +12,3 @@
 
 - ``CIIS 2026`` How Model Transformations Affect Fingerprints in Transformer Key--Value Caches<br>
 Xiangyu Wang, Hao Lu, **Renchao Li**
-
-## Others
