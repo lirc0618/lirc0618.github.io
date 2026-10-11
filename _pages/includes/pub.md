@@ -13,5 +13,7 @@
 - ``CIIS 2026`` ``EI`` How Model Transformations Affect Fingerprints in Transformer Key--Value Caches<br>
 Xiangyu Wang, Hao Lu, and **Renchao Li**
 
+## 📄 Journal
+
 - ``TIFS 2025`` ``CCF-A`` ``硬件安全顶刊`` Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication<br>
 **Renchao Li**, Aijiao Cui, Mingyu Li，Zijie Yan, and Chip-Hong Chang
