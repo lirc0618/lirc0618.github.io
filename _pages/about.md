@@ -12,7 +12,7 @@ redirect_from:
 <div class="section-kicker">RESEARCH &amp; ACADEMIC PROFILE</div>
 {% capture intro %}{% include_relative includes/intro.md %}{% endcapture %}
 {{ intro | markdownify }}
-<div class="research-tags"><span>Hardware Security</span><span>Physical Unclonable Functions</span><span>Printed Electronics</span><span>AI Authentication</span></div>
+<div class="research-tags"><span>Hardware Security</span><span>PUFs &amp; Device Fingerprints</span><span>Printed Electronics</span><span>IoT Security</span></div>
 </section>
 
 <section class="academic-section news-section" id="news">
