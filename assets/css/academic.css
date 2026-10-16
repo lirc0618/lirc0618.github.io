@@ -53,6 +53,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid #087f82; outline-offs
 .publications-section li { background: #f8fafc; border: 1px solid #e4ebf1; border-left: 3px solid #91bdc6; border-radius: 8px; padding: 18px 20px; margin-bottom: 12px !important; overflow-wrap: anywhere; }
 .publications-section li code { display: inline-block; background: #e4f0f2; color: #146b76; border: 0; border-radius: 5px; padding: 3px 8px; margin: 0 6px 5px 0; font-family: inherit; font-size: 11px; font-weight: 750; white-space: normal; }
 .publications-section li strong { color: var(--ink); }
+.page__content .publications-section li h3 { margin: 0 0 10px; padding: 0; border: 0; color: var(--ink); font-family: inherit; font-size: 19px; font-weight: 750; line-height: 1.5; letter-spacing: -.015em; overflow-wrap: break-word; }
+.page__content .publications-section li h3 a { color: inherit; border-bottom: 0; }
+.page__content .publications-section li h3 a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.page__content .publications-section li h3 + p { margin: 0 0 10px; }
 .academic-footer { font-size: 12px; color: var(--muted); padding: 8px 4px; }
 .academic-footer span { margin: 0 10px; color: #9aabbc; }
 @media (max-width: 900px) {
@@ -78,6 +82,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #087f82; outline-offs
   .page__content .academic-section h1 { font-size: 21px; }
   .page__content .academic-section li { font-size: 14px; }
   .publications-section li { padding: 15px; }
+  .page__content .publications-section li h3 { font-size: 17px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

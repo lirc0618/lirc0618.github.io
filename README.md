@@ -14,6 +14,8 @@
 - `assets/css/academic.css`：当前页面的自定义样式。
 - `_data/navigation.yml`：顶部导航。
 
+论文列表用 Markdown 三级标题（`- ### 论文标题`）展示英文题名，使标题单独成行；标签放在标题下一段，再接简介、作者和链接。标题字号、字重及手机端样式由 `assets/css/academic.css` 统一控制；新增条目沿用维护规范中的示例。
+
 ## 发布
 
 在本目录运行，先查看改动，再提交需要发布的文件：
@@ -38,6 +40,8 @@ bundle exec jekyll serve
 ```
 
 打开 http://localhost:4000。修改 `_config.yml` 后需重启预览服务。
+
+论文列表的标题层级预览为 `_site/publication-preview/index.html`，同样是本地生成的临时静态预览，不提交，也不替代完整 Jekyll 构建验证。
 
 ## 模板来源
 

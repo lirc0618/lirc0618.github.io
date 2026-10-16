@@ -26,6 +26,9 @@ author:
 include:
   - _pages
 exclude:
+  # Repository maintenance documents; not part of the public site output.
+  - AGENTS.md
+  - _docs
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
