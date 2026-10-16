@@ -1,0 +1,29 @@
+/* Chinese research notes, using the homepage's typography and palette. */
+.research-article { padding: 32px; background: #fff; border: 1px solid var(--line); border-radius: 16px; }
+.research-back { display: inline-block; margin-bottom: 24px; font-size: 13px; }
+.research-article .section-kicker { letter-spacing: .08em; }
+.page__content .research-article h1 { margin: 0 0 24px; padding: 0; border: 0; font-family: inherit; font-size: clamp(25px, 3vw, 34px); line-height: 1.5; }
+.page__content .research-article h1::before { display: none; }
+.page__content .research-article h2 { margin: 36px 0 16px; padding: 0; border: 0; font-family: inherit; font-size: 21px; line-height: 1.6; }
+.page__content .research-article p, .page__content .research-article li { font-size: 15px; line-height: 1.95; }
+.research-article p { margin: 0 0 18px; }
+.research-article li { margin-bottom: 12px; }
+.research-paper { margin: 24px 0 28px; padding: 18px 20px; background: #f0f7f8; border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; overflow-wrap: anywhere; }
+.research-paper p:last-child, .research-end p:last-child { margin-bottom: 0; }
+.page__content .research-paper p { font-size: 13px; }
+.research-figure { display: block; margin: 28px 0; }
+.research-figure img { display: block; width: 100%; max-width: 480px; height: auto; margin: 0 auto; border: 1px solid var(--line); border-radius: 8px; }
+.research-figure figcaption { margin: 12px 0 0; color: var(--muted); font-size: 12px; line-height: 1.8; text-align: left; }
+.research-article table { display: table; width: 100%; margin: 22px 0 12px; font-size: 14px; }
+.research-article th, .research-article td { padding: 10px 12px; }
+.research-end { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); }
+@media (max-width: 700px) {
+  .research-article { padding: 24px 20px; border-radius: 12px; }
+  .page__content .research-article h2 { font-size: 19px; }
+  .research-paper { padding: 16px; }
+  .research-article th, .research-article td { padding: 8px 6px; font-size: 12px; }
+}
+@media print {
+  .research-article { padding: 0; border: 0; }
+  .research-figure, .research-article table { break-inside: avoid; }
+}

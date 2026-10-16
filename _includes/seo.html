@@ -8,7 +8,7 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
-<title>{{ site.title }} - Homepage</title>
+<title>{% if page.title and page.title != '' %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }} - Homepage{% endif %}</title>
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
@@ -29,16 +29,16 @@
   {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
 {% endif %}
 
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="{{ page.lang | default: 'en' | replace: '-', '_' }}">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ site.title }}">
+<meta property="og:title" content="{% if page.title and page.title != '' %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
 
 {% if seo_url %}
   <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
-{% if page.excerpt %}
+{% if seo_description %}
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 
