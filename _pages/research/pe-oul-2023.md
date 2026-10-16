@@ -11,25 +11,17 @@ author_profile: true
 
 <a class="research-back" href="{{ '/#publications' | relative_url }}" target="_self">← 返回论文列表</a>
 
-<div class="section-kicker">研究介绍 · ASIANHOST 2023</div>
+<div class="section-kicker">研究介绍</div>
 
 # 给印刷电子产品一枚随机墨滴“指纹”
+
+<p class="research-meta">AsianHOST 2023 · <a href="{{ '/assets/pdf/A%20Lightweight%20Authentication%20Scheme%20with%20PE-Based%20Unclonable%20Label.pdf' | relative_url }}">论文 PDF</a> · <a href="https://ieeexplore.ieee.org/document/10409427/">IEEE Xplore</a></p>
 
 印刷传感器、智能包装等产品可以批量制造，单件成本很低，防伪方案增加的器件和制造步骤也就需要格外精打细算。条码虽然便于记录产品编号，相同图案却容易被再次印刷。为这类产品建立身份，既要让伪造者难以复现，也要控制制造和认证的附加负担。
 
 我们利用了印刷过程中的一种随机现象：纳米银墨水落在 PET 薄膜上，会重新分布成大小、轮廓和位置各异的墨滴。即使采用相同的打印图案，也难以逐滴控制这些细节。这些随机墨滴，就可以成为每件产品的物理“指纹”。
 
 这项工作据此设计了与印刷工艺兼容的光学不可克隆标签，无需专门的指纹电路；再通过图像处理，将标签转成便于保存和比对的数字标识。在 100 个标签的重复读取实验中，每件产品只需 **32 字节的指纹**，就能保留同一标签与不同标签之间的区分间隔。
-
-<div class="research-paper" markdown="1">
-
-**对应论文**：A Lightweight Authentication Scheme with PE-Based Unclonable Label<br>
-**作者**：Renchao Li, Zhen Weng, Aijiao Cui, Gang Qu<br>
-**发表会议**：AsianHOST 2023
-
-[论文 PDF]({{ '/assets/pdf/A%20Lightweight%20Authentication%20Scheme%20with%20PE-Based%20Unclonable%20Label.pdf' | relative_url }}) · [IEEE Xplore](https://ieeexplore.ieee.org/document/10409427/)
-
-</div>
 
 ## 让身份特征的设计适应印刷工艺
 
@@ -95,6 +87,9 @@ author_profile: true
 文中的“轻量级”具体指这些设计带来的工艺兼容性、无需专用指纹电路和紧凑的指纹存储。完整系统的时延与能耗尚未测量。实验使用工业相机和透射光源，每个标签采集两次；长期老化、弯折磨损、跨设备读取及具体复制攻击下的表现，仍是面向实际使用需要继续验证的条件。
 
 <div class="research-end" markdown="1">
+
+<p class="research-source">对应论文：A Lightweight Authentication Scheme with PE-Based Unclonable Label<br>
+作者：Renchao Li, Zhen Weng, Aijiao Cui, Gang Qu</p>
 
 [阅读原论文 PDF]({{ '/assets/pdf/A%20Lightweight%20Authentication%20Scheme%20with%20PE-Based%20Unclonable%20Label.pdf' | relative_url }}) · <a href="{{ '/#publications' | relative_url }}" target="_self">返回论文列表 ↑</a>
 
