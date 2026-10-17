@@ -14,6 +14,8 @@
       {% if author.email %}<li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>{% endif %}
       {% if author.github %}<li><a href="https://github.com/{{ author.github }}" rel="noopener"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>{% endif %}
       {% if author.orcid %}<li><a href="{{ author.orcid }}" rel="noopener"><i class="ai ai-orcid-square ai-fw" aria-hidden="true"></i> ORCID</a></li>{% endif %}
+      {% if author.googlescholar %}<li><a href="{{ author.googlescholar | escape }}" rel="noopener"><i class="ai ai-google-scholar ai-fw" aria-hidden="true"></i> Google Scholar</a></li>{% endif %}
+      {% if author.researchgate %}<li><a href="{{ author.researchgate | escape }}" rel="noopener"><i class="ai ai-researchgate ai-fw" aria-hidden="true"></i> ResearchGate</a></li>{% endif %}
     </ul>
   </div>
 </div>
