@@ -46,3 +46,8 @@ bundle exec jekyll serve
 ## 模板来源
 
 基于 [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) 和 Minimal Mistakes 定制。保留原项目 LICENSE 及依赖中的许可证与作者声明。
+
+
+## CIIS 2026 与双语论文入口（2026-11-02）
+
+英文首页 `/`、中文首页 `/zh/` 共用 `_data/publications.yml` 的题名、作者、资源和两种语言简介；列表模板为 `_pages/includes/pub.md`。新增 CIIS 中文解读为 `/research/kv-cache-fingerprints/`，共五篇解读。原有新闻与荣誉保留已发布内容，本次没有同步其待提交改动。论文事实口径见 `_docs/RESEARCH_SOURCE_NOTES.md`。

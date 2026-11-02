@@ -1,0 +1,27 @@
+<section class="academic-section intro-section" id="about-me">
+<div class="section-kicker">{{ locale.kicker }}</div>
+{% capture intro %}{% include_relative {{ locale.intro }} %}{% endcapture %}
+{{ intro | markdownify }}
+<div class="research-tags">{% for tag in locale.tags %}<span>{{ tag }}</span>{% endfor %}</div>
+</section>
+
+<section class="academic-section news-section" id="news">
+{% capture news %}{% include_relative includes/news.md %}{% endcapture %}
+{{ news | markdownify }}
+</section>
+
+<section class="academic-section publications-section" id="publications">
+{% capture publications %}{% include_relative includes/pub.md %}{% endcapture %}
+{{ publications | markdownify }}
+</section>
+
+<section class="academic-section honors-section" id="honors">
+{% capture honors %}{% include_relative {{ locale.honors }} %}{% endcapture %}
+{{ honors | markdownify }}
+</section>
+
+<section class="academic-section education-section" id="education">
+{% capture education %}{% include_relative {{ locale.education }} %}{% endcapture %}
+{{ education | markdownify }}
+</section>
+<footer class="academic-footer">{{ locale.profile.name | default: site.author.name }} <span>·</span> {{ locale.profile.location | default: site.author.location }} <span>·</span> <a href="mailto:{{ site.author.email }}">{{ locale.contact }}</a></footer>

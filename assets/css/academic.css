@@ -6,7 +6,13 @@ a { color: #086e87; }
 a:focus-visible, button:focus-visible { outline: 3px solid #087f82; outline-offset: 4px; }
 .masthead { background: rgba(255,255,255,.97); border-bottom: 1px solid var(--line); box-shadow: 0 3px 20px rgba(25,50,77,.03); }
 .masthead__inner-wrap { max-width: 1240px; padding: 15px 24px; }
-.greedy-nav { background: transparent; font-family: inherit; }
+.masthead__menu { display: flex; align-items: center; gap: 20px; }
+.greedy-nav { flex: 1; min-width: 0; background: transparent; font-family: inherit; }
+.language-switch { display: flex; flex: 0 0 auto; align-items: center; gap: 8px; white-space: nowrap; font-size: 13px; }
+.language-switch a { display: block; padding: 8px 3px; color: var(--muted); }
+.language-switch a:hover, .language-switch a[aria-current="page"] { color: var(--accent); }
+.language-switch a[aria-current="page"] { font-weight: 750; }
+.language-switch span { color: #9aabbc; }
 .greedy-nav .visible-links a { margin: 0 16px; color: var(--muted); font-size: 14px; font-weight: 500; }
 .greedy-nav .visible-links a::before { background: var(--accent); height: 2px; }
 .greedy-nav .visible-links .masthead__menu-item--lg a { color: var(--ink); font-size: 21px; font-weight: 750; margin-left: 0; }
@@ -67,6 +73,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid #087f82; outline-offs
 }
 @media (max-width: 700px) {
   .masthead__inner-wrap { padding: 12px 16px; }
+  .masthead__menu { gap: 12px; }
+  .masthead__menu-item--lg { padding-right: 0; }
   .masthead__menu-home-item { display: block !important; }
   .greedy-nav .visible-links .masthead__menu-item--lg a { font-size: 19px; }
   #main { display: block; padding: 0 16px; margin-top: 22px; }

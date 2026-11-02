@@ -14,3 +14,19 @@ main:
 
   - title: "Education"
     url: "/#education"
+
+zh-CN:
+  - title: "关于我"
+    url: "/zh/#about-me"
+
+  - title: "近期动态"
+    url: "/zh/#news"
+
+  - title: "学术论文"
+    url: "/zh/#publications"
+
+  - title: "荣誉与奖励"
+    url: "/zh/#honors"
+
+  - title: "教育经历"
+    url: "/zh/#education"

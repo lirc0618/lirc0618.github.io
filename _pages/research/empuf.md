@@ -9,7 +9,7 @@ author_profile: true
 
 <article class="research-article" lang="zh-CN" markdown="1">
 
-<a class="research-back" href="{{ '/#publications' | relative_url }}" target="_self">← 返回论文列表</a>
+<a class="research-back" href="{{ '/zh/#publications' | relative_url }}" target="_self">← 返回论文列表</a>
 
 <div class="section-kicker">研究介绍</div>
 
@@ -93,7 +93,7 @@ EMPUF 的价值，是让设计者在制造之前看清这些评估条件，并�
 <p class="research-source">对应论文：EMPUF: A Leakage-Controlled Pre-Fabrication Benchmark for PCB Spectral Fingerprints<br>
 作者：Renchao Li, Hao Lu, Xiangyu Wang</p>
 
-[阅读原论文 PDF]({{ '/assets/pdf/EMPUF_%20A%20Leakage-Controlled%20Pre-Fabrication%20Benchmark%20for%20PCB%20Spectral%20Fingerprints.pdf' | relative_url }}) · <a href="{{ '/#publications' | relative_url }}" target="_self">返回论文列表 ↑</a>
+[阅读原论文 PDF]({{ '/assets/pdf/EMPUF_%20A%20Leakage-Controlled%20Pre-Fabrication%20Benchmark%20for%20PCB%20Spectral%20Fingerprints.pdf' | relative_url }}) · <a href="{{ '/zh/#publications' | relative_url }}" target="_self">返回论文列表 ↑</a>
 
 </div>
 

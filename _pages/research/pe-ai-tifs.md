@@ -9,7 +9,7 @@ author_profile: true
 
 <article class="research-article" lang="zh-CN" markdown="1">
 
-<a class="research-back" href="{{ '/#publications' | relative_url }}" target="_self">← 返回论文列表</a>
+<a class="research-back" href="{{ '/zh/#publications' | relative_url }}" target="_self">← 返回论文列表</a>
 
 <div class="section-kicker">研究介绍</div>
 
@@ -159,7 +159,7 @@ Smart-ID 原型让用户通过手机拍摄标签，并返回身份判定。原�
 <p class="research-source">对应论文：Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication<br>
 作者：Renchao Li, Aijiao Cui, Mingyu Li, Zijie Yan, Chip-Hong Chang</p>
 
-[阅读原论文 PDF]({{ '/assets/pdf/Printed%20Electronics%20Based%20Optical%20Unclonable%20Label%20for%20Artificial%20Intelligence%20Authentication.pdf' | relative_url }}) · <a href="{{ '/#publications' | relative_url }}" target="_self">返回论文列表 ↑</a>
+[阅读原论文 PDF]({{ '/assets/pdf/Printed%20Electronics%20Based%20Optical%20Unclonable%20Label%20for%20Artificial%20Intelligence%20Authentication.pdf' | relative_url }}) · <a href="{{ '/zh/#publications' | relative_url }}" target="_self">返回论文列表 ↑</a>
 
 </div>
 

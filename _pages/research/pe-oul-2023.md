@@ -9,7 +9,7 @@ author_profile: true
 
 <article class="research-article" lang="zh-CN" markdown="1">
 
-<a class="research-back" href="{{ '/#publications' | relative_url }}" target="_self">← 返回论文列表</a>
+<a class="research-back" href="{{ '/zh/#publications' | relative_url }}" target="_self">← 返回论文列表</a>
 
 <div class="section-kicker">研究介绍</div>
 
@@ -91,7 +91,7 @@ author_profile: true
 <p class="research-source">对应论文：A Lightweight Authentication Scheme with PE-Based Unclonable Label<br>
 作者：Renchao Li, Zhen Weng, Aijiao Cui, Gang Qu</p>
 
-[阅读原论文 PDF]({{ '/assets/pdf/A%20Lightweight%20Authentication%20Scheme%20with%20PE-Based%20Unclonable%20Label.pdf' | relative_url }}) · <a href="{{ '/#publications' | relative_url }}" target="_self">返回论文列表 ↑</a>
+[阅读原论文 PDF]({{ '/assets/pdf/A%20Lightweight%20Authentication%20Scheme%20with%20PE-Based%20Unclonable%20Label.pdf' | relative_url }}) · <a href="{{ '/zh/#publications' | relative_url }}" target="_self">返回论文列表 ↑</a>
 
 </div>
 

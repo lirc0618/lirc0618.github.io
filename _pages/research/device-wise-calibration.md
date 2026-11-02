@@ -9,7 +9,7 @@ author_profile: true
 
 <article class="research-article" lang="zh-CN" markdown="1">
 
-<a class="research-back" href="{{ '/#publications' | relative_url }}" target="_self">← 返回论文列表</a>
+<a class="research-back" href="{{ '/zh/#publications' | relative_url }}" target="_self">← 返回论文列表</a>
 
 <div class="section-kicker">研究介绍</div>
 
@@ -113,7 +113,7 @@ PFC-FedIDS 先通过联邦训练获得共享的编码器与分类器，再在每
 <p class="research-source">对应论文：Device-wise Conformal False-Alarm Calibration for Federated IoT Intrusion Detection<br>
 作者：Renchao Li, Aijiao Cui</p>
 
-[阅读原论文 PDF]({{ '/assets/pdf/Device-wise%20Conformal%20False-Alarm%20Calibration%20for%20Federated%20IoT%20Intrusion%20Detection.pdf' | relative_url }}) · <a href="{{ '/#publications' | relative_url }}" target="_self">返回论文列表 ↑</a>
+[阅读原论文 PDF]({{ '/assets/pdf/Device-wise%20Conformal%20False-Alarm%20Calibration%20for%20Federated%20IoT%20Intrusion%20Detection.pdf' | relative_url }}) · <a href="{{ '/zh/#publications' | relative_url }}" target="_self">返回论文列表 ↑</a>
 
 </div>
 

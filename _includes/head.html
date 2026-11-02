@@ -12,7 +12,12 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v=4">
+<link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v=5">
+{% if page.homepage %}
+<link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
+<link rel="alternate" hreflang="zh-CN" href="{{ '/zh/' | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+{% endif %}
 {% if page.research_article %}<link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">{% endif %}
 
 <meta http-equiv="cleartype" content="on">

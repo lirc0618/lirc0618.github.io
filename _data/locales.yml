@@ -1,0 +1,53 @@
+en:
+  home: /
+  name: Renchao Li
+  navigation_label: Main navigation
+  menu_label: Toggle navigation
+  language_label: Language
+  kicker: RESEARCH & ACADEMIC PROFILE
+  contact: Get in touch ↗
+  email: Email
+  scholar: Google Scholar
+  intro: includes/intro.md
+  honors: includes/honers.md
+  education: includes/others.md
+  publications: Publications
+  journal: Journal
+  conference: Conference
+  news: News
+  reading: 中文解读
+  reading_lang: zh-CN
+  tags:
+    - Hardware Security
+    - PUFs & Device Fingerprints
+    - Printed Electronics
+    - IoT Security
+zh-CN:
+  home: /zh/
+  name: 李仁超
+  navigation_label: 主导航
+  menu_label: 展开或收起导航
+  language_label: 语言
+  kicker: 研究方向与学术经历
+  contact: 邮件联系 ↗
+  email: 邮箱
+  scholar: 谷歌学术
+  intro: includes/zh/intro.md
+  honors: includes/honers.md
+  education: includes/zh/others.md
+  publications: 学术论文
+  journal: 期刊论文
+  conference: 会议论文
+  news: 近期动态
+  reading: 中文解读
+  reading_lang: zh-CN
+  profile:
+    name: 李仁超（Renchao Li）
+    bio: 研究硬件安全、物理不可克隆函数（PUF）、印刷电子与 AI 身份认证。
+    location: 深圳
+    description: 哈尔滨工业大学（深圳）博士研究生
+  tags:
+    - 硬件安全
+    - PUF 与器件指纹
+    - 印刷电子
+    - 物联网安全

@@ -182,3 +182,10 @@ README 区分了“只修改列表/新闻”和“新增或修改独立解读”
 | PRICAI 2026 | [device-wise-calibration.md](../_pages/research/device-wise-calibration.md) | 约 2,700 字，2 图、2 表 | 设备级误报、阈值校准、模型个性化的作用与漂移边界 |
 
 论文列表另有 CIIS 2026 条目，本轮没有对应 PDF 或中文解读；后续有材料时按同一流程补充，不将它计入已完成的四篇。
+
+
+## 2026-11-02：CIIS 论文与双语首页发布补充
+
+CIIS 2026 已补齐双语首页简介、`/research/kv-cache-fingerprints/` 中文解读、原论文图 1、结果表及 PDF 入口，当前共五篇中文解读。论文题名、作者与资源共用 `_data/publications.yml`，简介在 `summary.en` 和 `summary.zh-CN` 分别维护；渲染模板为 `_pages/includes/pub.md`。英文首页为 `/`，中文首页为 `/zh/`，中文解读返回 `/zh/#publications`。发布时同时核对双语首页、正文、资源和返回链接。
+
+本次仅同步论文所需的双语模板、导航与语言资源；新闻、荣誉、头像和演讲资料的其他本地修改仍待后续单独发布。新闻当前沿用已发布的 `_pages/includes/news.md`，未迁移到数据文件。正式 DOI/ISBN 仍是原稿占位信息，不生成链接；原稿分歧及采用口径见事实底稿的 CIIS 节。

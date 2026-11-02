@@ -1,0 +1,113 @@
+# Shared paper metadata; only summaries and display badges vary by language.
+- title: Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication
+  type: journal
+  venue: TIFS 2025
+  authors: "**Renchao Li**, Aijiao Cui, Mingyu Li, Zijie Yan, and Chip-Hong Chang"
+  badges:
+    en: ["CAS Zone 1", "JCR Q1", "IF=9.7", "CCF-A", "Leading hardware security journal"]
+    zh-CN: ["中科院1区", "JCR Q1", "IF=9.7", "CCF-A", "硬件安全顶刊"]
+  summary:
+    en: >-
+      To authenticate low-cost printed electronic products, we use the random
+      coalescence of nanosilver ink droplets to create optical unclonable labels
+      compatible with the printing process. An AI-based system identifies enrolled
+      labels and rejects unenrolled ones. In an open-set experiment with 300
+      enrolled label classes, identification accuracy reached 97%, and all 200
+      unenrolled labels were rejected. The study also evaluated bending,
+      temperature and humidity, aging, and forgery attacks, and demonstrated a
+      smartphone reader with a microscopy attachment.
+    zh-CN: >-
+      面向低成本印刷电子产品的防伪，我们利用纳米银墨滴的随机融合，制造与印刷工艺兼容的光学不可克隆标签，并结合 AI 进行身份识别与未注册标签拒识。在 300 类注册标签的开放集实验中，识别准确率达到 97%，另有 200 枚未注册标签全部被拒绝；工作进一步覆盖弯折、温湿度、老化及伪造攻击测试，并实现了配合显微成像附件的手机端读取原型。
+  research: /research/pe-ai-tifs/
+  pdf: /assets/pdf/Printed%20Electronics%20Based%20Optical%20Unclonable%20Label%20for%20Artificial%20Intelligence%20Authentication.pdf
+
+- title: "EMPUF: A Leakage-Controlled Pre-Fabrication Benchmark for PCB Spectral Fingerprints"
+  type: conference
+  venue: ASP-DAC 2027
+  authors: "**Renchao Li**, Hao Lu, and Xiangyu Wang"
+  badges:
+    en: ["CCF-C", "EI", "Major EDA conference"]
+    zh-CN: ["CCF-C", "EI", "EDA 四大顶会"]
+  summary:
+    en: >-
+      Claims about the modeling resistance of PCB electromagnetic fingerprints
+      depend on encoding rules, data splits, and the information available to an
+      attacker. We build an automated pre-fabrication pipeline spanning structure
+      generation, manufacturing-tolerance simulation, fingerprint encoding, and
+      attack evaluation. Thresholds are determined using enrollment samples only,
+      and training and test sets contain disjoint devices. By distinguishing
+      access to nominal designs, actual geometries, and spectra, the benchmark
+      supports reproducible design screening and security comparisons before
+      fabrication.
+    zh-CN: >-
+      PCB 电磁指纹的抗建模结论，容易受到编码规则、数据划分和攻击者信息的影响。我们建立了从结构生成、制造容差仿真到指纹编码与攻击评估的自动化流程，只用注册样本确定阈值，并按器件隔离训练和测试。实验明确区分名义设计、实际几何与频谱访问条件，为制板前的设计筛选和安全比较提供可复现的依据。
+  research: /research/empuf/
+  pdf: /assets/pdf/EMPUF_%20A%20Leakage-Controlled%20Pre-Fabrication%20Benchmark%20for%20PCB%20Spectral%20Fingerprints.pdf
+
+- title: Device-wise Conformal False-Alarm Calibration for Federated IoT Intrusion Detection
+  type: conference
+  venue: PRICAI 2026
+  authors: "**Renchao Li** and Aijiao Cui"
+  badges:
+    en: ["CCF-C", "EI"]
+    zh-CN: ["CCF-C", "EI"]
+  summary:
+    en: >-
+      An acceptable average false-positive rate can hide frequent false alarms on
+      individual devices in heterogeneous IoT systems. After training a shared
+      federated detector, we calibrate each device's alarm threshold using only
+      its normal traffic. In the main Edge-IIoTset experiment, the range of
+      false-positive rates across devices fell from 22.80 to 1.74 percentage
+      points while maintaining a similar average attack-detection rate. Further
+      tests with temporal splits and deduplication clarify when distribution
+      changes require recalibration.
+    zh-CN: >-
+      异构 IoT 系统的平均误报率达标，仍可能掩盖个别设备频繁误报的问题。我们在共享联邦检测模型之后，仅利用各设备的正常流量分别校准报警阈值。在 Edge-IIoTset 主实验中，设备间误报率极差从 22.80 降至 1.74 个百分点，同时保持相近的平均攻击检出率；进一步的时间划分与去重测试，也明确了分布变化后需要重新校准的条件。
+  research: /research/device-wise-calibration/
+  pdf: /assets/pdf/Device-wise%20Conformal%20False-Alarm%20Calibration%20for%20Federated%20IoT%20Intrusion%20Detection.pdf
+
+- title: How Model Transformations Affect Fingerprints in Transformer Key–Value Caches
+  type: conference
+  venue: CIIS 2026
+  authors: "Xiangyu Wang, Hao Lu, and **Renchao Li**"
+  badges:
+    en: ["EI"]
+    zh-CN: ["EI"]
+  summary:
+    en: >-
+      Model compression and adaptation can weaken the fingerprints used for
+      ownership auditing. We protect a seven-bit payload with BCH coding and
+      distribute it across Value-projection coordinates, then audit the signal
+      through paired clean and marked inference runs. Across four language
+      models and 14 controlled conditions, detection reached 100% in native
+      and INT8 settings, while gains over uncoded payloads were concentrated
+      under projection pruning. Separate measurements of message recovery,
+      detector acceptance, and prediction quality show why a surviving
+      fingerprint alone does not establish that a transformed model remains useful.
+    zh-CN: >-
+      模型压缩与适配可能削弱用于归属审计的指纹。我们用 BCH 纠错编码保护 7 位消息，将信号分散到 Value 投影坐标，并通过成对的干净与带指纹推理进行核验。在四个语言模型、14 种受控条件下，原生与 INT8 设置的检测率均为 100%，相对未编码方案的收益主要体现在投影剪枝中；进一步分开衡量消息恢复、检测通过与预测质量，揭示指纹仍在并不代表模型效用得到保留。
+  research: /research/kv-cache-fingerprints/
+  pdf: /assets/pdf/How%20Model%20Transformations%20Affect%20Fingerprints%20in%20Transformer%20Key%E2%80%93Value%20Caches.pdf
+
+- title: A Lightweight Authentication Scheme with PE-Based Unclonable Label
+  title_url: https://ieeexplore.ieee.org/document/10409427/
+  type: conference
+  venue: AsianHOST 2023
+  authors: "**Renchao Li**, Zhen Weng, Aijiao Cui, and Gang Qu"
+  badges:
+    en: ["EI"]
+    zh-CN: ["EI"]
+  summary:
+    en: >-
+      We use naturally formed random droplets of nanosilver ink to give low-cost
+      printed electronic products a physical fingerprint. The labels are
+      compatible with the printing process, require no dedicated fingerprinting
+      circuit, and allow patterns to be designed independently of the device
+      structure. In experiments with 100 labels, a 32-byte fingerprint per label
+      distinguished different labels and recognized repeated readings of the
+      same label. Compared with the configurations reported in the paper, these
+      fingerprints were shorter and provided a larger separation margin.
+    zh-CN: >-
+      面向低成本印刷电子产品的防伪需求，我们利用纳米银墨水自然形成的随机墨滴，为产品建立物理“指纹”。标签与印刷工艺兼容，无需专用指纹电路，图案设计也不受器件结构约束。在 100 个标签的实验中，每件产品仅需 32 字节指纹，即可区分不同标签并识别同一标签的重复读取；相较论文列出的对比方案，指纹更短，区分间隔也更大。
+  research: /research/pe-oul-2023/
+  pdf: /assets/pdf/A%20Lightweight%20Authentication%20Scheme%20with%20PE-Based%20Unclonable%20Label.pdf

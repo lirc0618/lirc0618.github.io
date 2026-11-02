@@ -1,6 +1,8 @@
 ---
 ---
 
+{% assign language = page.lang | default: 'en' %}
+{% assign locale = site.data.locales[language] | default: site.data.locales.en %}
 <!doctype html>
 <html lang="{{ page.lang | default: 'en' }}" class="no-js">
   <head>
