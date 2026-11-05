@@ -15,6 +15,9 @@ en:
   journal: Journal
   conference: Conference
   news: News
+  service: Academic Service
+  journal_reviewer: Journal Reviewer
+  conference_reviewer: Conference Reviewer
   reading: 中文解读
   reading_lang: zh-CN
   tags:
@@ -39,6 +42,9 @@ zh-CN:
   journal: 期刊论文
   conference: 会议论文
   news: 近期动态
+  service: 学术服务
+  journal_reviewer: 期刊审稿人
+  conference_reviewer: 会议审稿人
   reading: 中文解读
   reading_lang: zh-CN
   profile:

@@ -4,6 +4,8 @@
 
 ## 更新内容
 
+- `_data/service.yml`：共用期刊和会议审稿经历；`_pages/includes/service.md` 渲染“学术服务 / Academic Service”分区，标题译文在 `_data/locales.yml`。分区位于论文之后，双语导航与语言切换均支持 `#service`。
+
 - `_config.yml`：姓名、简介、邮箱、头像和社交链接。
 - `_pages/includes/intro.md`：个人介绍。
 - `_pages/includes/news.md`：新闻。

@@ -9,6 +9,9 @@ main:
   - title: "Publications"
     url: "/#publications"
 
+  - title: "Academic Service"
+    url: "/#service"
+
   - title: "Honors and Awards"
     url: "/#honors"
 
@@ -24,6 +27,9 @@ zh-CN:
 
   - title: "学术论文"
     url: "/zh/#publications"
+
+  - title: "学术服务"
+    url: "/zh/#service"
 
   - title: "荣誉与奖励"
     url: "/zh/#honors"

@@ -7,7 +7,7 @@
 
   function updateLinks() {
     var hash = window.location.hash;
-    if (!/^#(about-me|news|publications|honors|education)$/.test(hash)) hash = '';
+    if (!/^#(about-me|news|publications|service|honors|education)$/.test(hash)) hash = '';
     switcher.querySelectorAll('a[data-home]').forEach(function (link) {
       link.setAttribute('href', link.getAttribute('data-home') + hash);
     });
@@ -26,7 +26,7 @@
     if (!link) return;
     var destination = new URL(link.href, window.location.href);
     if (destination.origin !== window.location.origin || destination.pathname !== window.location.pathname) return;
-    if (!/^#(about-me|news|publications|honors|education)$/.test(destination.hash)) return;
+    if (!/^#(about-me|news|publications|service|honors|education)$/.test(destination.hash)) return;
     window.history.replaceState(null, '', destination.hash);
     updateLinks();
   });

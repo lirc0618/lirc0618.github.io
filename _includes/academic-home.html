@@ -15,6 +15,11 @@
 {{ publications | markdownify }}
 </section>
 
+<section class="academic-section service-section" id="service">
+{% capture service %}{% include_relative includes/service.md %}{% endcapture %}
+{{ service | markdownify }}
+</section>
+
 <section class="academic-section honors-section" id="honors">
 {% capture honors %}{% include_relative {{ locale.honors }} %}{% endcapture %}
 {{ honors | markdownify }}
