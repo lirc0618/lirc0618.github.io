@@ -11,14 +11,16 @@
 </script>
 
 <!-- For all browsers -->
+<link rel="preload" href="{{ '/assets/fonts/newsreader/Newsreader.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/inter/Inter.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v=5">
+<link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v=10">
 {% if page.homepage %}
 <link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
 <link rel="alternate" hreflang="zh-CN" href="{{ '/zh/' | absolute_url }}">
 <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
 {% endif %}
-{% if page.research_article %}<link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">{% endif %}
+{% if page.research_article %}<link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}?v=2">{% endif %}
 
 <meta http-equiv="cleartype" content="on">
 <base target="_blank">

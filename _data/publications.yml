@@ -88,6 +88,7 @@
       模型压缩与适配可能削弱用于归属审计的指纹。我们用 BCH 纠错编码保护 7 位消息，将信号分散到 Value 投影坐标，并通过成对的干净与带指纹推理进行核验。在四个语言模型、14 种受控条件下，原生与 INT8 设置的检测率均为 100%，相对未编码方案的收益主要体现在投影剪枝中；进一步分开衡量消息恢复、检测通过与预测质量，揭示指纹仍在并不代表模型效用得到保留。
   research: /research/kv-cache-fingerprints/
   pdf: /assets/pdf/How%20Model%20Transformations%20Affect%20Fingerprints%20in%20Transformer%20Key%E2%80%93Value%20Caches.pdf
+  slide: /assets/slides/How%20Model%20Transformations%20Affect%20Fingerprints%20in%20Transformer%20Key%E2%80%93Value%20Caches.pdf
 
 - title: A Lightweight Authentication Scheme with PE-Based Unclonable Label
   title_url: https://ieeexplore.ieee.org/document/10409427/
@@ -111,3 +112,4 @@
       面向低成本印刷电子产品的防伪需求，我们利用纳米银墨水自然形成的随机墨滴，为产品建立物理“指纹”。标签与印刷工艺兼容，无需专用指纹电路，图案设计也不受器件结构约束。在 100 个标签的实验中，每件产品仅需 32 字节指纹，即可区分不同标签并识别同一标签的重复读取；相较论文列出的对比方案，指纹更短，区分间隔也更大。
   research: /research/pe-oul-2023/
   pdf: /assets/pdf/A%20Lightweight%20Authentication%20Scheme%20with%20PE-Based%20Unclonable%20Label.pdf
+  slide: /assets/slides/A%20Lightweight%20Authentication%20Scheme%20with%20PE-Based%20Optical%20Unclonable%20Label.pdf

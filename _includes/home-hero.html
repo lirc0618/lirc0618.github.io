@@ -1,0 +1,19 @@
+{% assign author = site.author %}
+<section class="home-hero" aria-label="{{ locale.about }}">
+  <div class="home-hero__inner">
+    <div class="home-hero__text">
+      <p class="hero-eyebrow">{{ locale.hero_eyebrow }}</p>
+      <h1 class="hero-name">{{ locale.hero_name | default: author.name }}</h1>
+      <p class="hero-lead">{{ locale.hero_lead }}</p>
+      <div class="hero-actions">
+        {% if author.email %}<a class="btn btn--primary" href="mailto:{{ author.email }}">{{ locale.email }}</a>{% endif %}
+        {% if author.googlescholar %}<a class="btn" href="{{ author.googlescholar | escape }}" rel="noopener">Google Scholar</a>{% endif %}
+        {% if author.orcid %}<a class="btn" href="{{ author.orcid }}" rel="noopener">ORCID</a>{% endif %}
+        {% if author.github %}<a class="btn" href="https://github.com/{{ author.github }}" rel="noopener">GitHub</a>{% endif %}
+      </div>
+    </div>
+    <div class="home-hero__portrait">
+      <img src="{{ author.avatar | relative_url }}" alt="{{ locale.hero_name | default: author.name }}" width="1024" height="1024">
+    </div>
+  </div>
+</section>

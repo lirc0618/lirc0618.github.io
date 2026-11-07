@@ -1,6 +1,7 @@
 _site/
 push.sh
 .DS_Store
+._*
 
 .bundle/
 .sass-cache/

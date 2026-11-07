@@ -2,15 +2,29 @@
 
 记录日期：2026-10-16。本文记录本次四篇工作介绍的已确认要求，供以后新增研究和修改现有页面时沿用。用户后续提出的新要求优先；本规范可随实际使用继续修订。
 
+## 双语首页维护更新（2026-10-21）
+
+英文首页为 `/`，中文首页为 `/zh/`。本次将首页论文元数据、短简介和资源入口迁移至 `_data/publications.yml`，新闻迁移至 `_data/news.yml`；`_pages/includes/pub.md`、`news.md` 保留为共用渲染模板，不再直接填写论文或新闻条目。独立中文解读及其固定链接继续保留；返回论文列表使用 `/zh/#publications`。
+
+两种语言共用论文题名、作者、会议/期刊年份、PDF 和研究解读路径。只在 `summary.en`、`summary.zh-CN` 与 `badges.en`、`badges.zh-CN` 分别维护译文。英文简介保持中文稿的实验条件、数字、比较对象与结论强度；既有书目信息中的待核对项不因翻译而视为已经确认。CIIS 条目已于 2026-11-02 补齐简介、PDF 与中文解读；尚缺材料的新条目仅展示已确认元数据。
+
+切换按钮固定在导航右侧，不随手机折叠菜单隐藏；有首页栏目锚点时保留同一栏目。未提供英文长解读，不为中文研究页添加虚假的英文替代页面或 `hreflang`。完整新增/修改后检查两种首页及中文解读的导航、PDF、图片和返回入口。
+
 ## 学术服务分区维护更新（2026-11-05）
 
 首页另设“学术服务 / Academic Service”分区，位于论文与荣誉之间。审稿经历统一维护在 `_data/service.yml`，按 `journals`、`conferences` 分组，由 `_pages/includes/service.md` 和 `_data/locales.yml` 渲染双语标题。只添加用户确认的经历；未提供的年份、次数和职务不补写，名称有歧义时保留用户原称。更新时检查两种首页、导航的 `#service` 入口及语言切换的栏目保留行为。
+
+## 首页改版维护更新（2026-11-05）
+
+首页改为编辑式视觉：Newsreader 衬线标题、Inter 正文、暖白底与深青色强调色；标题样式与分区编号统一在 `assets/css/academic.css`，字体文件在 `assets/fonts/`，由 `_includes/head.html` 预加载。`_includes/home-hero.html` 渲染首屏（姓名、研究简介、联系方式按钮、头像），`_includes/home-sidebar.html` 渲染左侧研究方向与联系方式；两者只在 `page.homepage` 时引入。六个分区标题在 `_data/locales.yml`（`about`、`news`、`publications`、`service`、`honors_title`、`education_title`），`_includes/academic-home.html` 负责编号与容器，不要在各 include 里重复写 H1/H2。
+
+荣誉分区拆成中文 `_pages/includes/honers.md` 与英文 `_pages/includes/en/honers.md` 两份，按类别分组；新增条目时两份同步，原文未确认的年月以“待补 / month TBD”标注，不编造日期。`_pages/includes/` 是局部模板，已在 `_config.yml` 的 `exclude` 中排除，避免被当作独立页面输出；修改后需用真实 Jekyll 构建核对两种首页、五篇解读、字体与图片是否都可访问。
 
 ## 1. 每项研究交付两层内容
 
 | 内容 | 读者需要得到什么 | 位置 |
 | --- | --- | --- |
-| 首页简介 | 快速理解研究问题、主要贡献和有依据的优势，决定是否继续阅读 | `_pages/includes/pub.md` |
+| 首页简介 | 快速理解研究问题、主要贡献和有依据的优势，决定是否继续阅读 | `_data/publications.yml` 中的 `summary.en`、`summary.zh-CN` |
 | 独立中文解读 | 理解为什么做、为什么这样设计、相较已有方案改进在哪里、实验证明了什么 | `_pages/research/<slug>.md`，对应 `/research/<slug>/` |
 
 默认读者懂技术，但未必研究该论文的具体方向。中文解读采用作者讲解自己工作的语气，可以用“我们”，但不能补写没有材料支持的研究经历、选题故事或试错过程。
@@ -31,18 +45,23 @@
 
 条目排列沿用已确认的形式：正式英文标题 → 分区/检索等标签 → 中文简介 → 会议/期刊与作者 → 中文解读和 PDF 链接。正式英文标题用列表内的 Markdown 三级标题（`- ### 论文标题`）单独成行，字号与字重高于简介；标签放在标题下一段，避免抢占标题的首行空间。标题样式由 `assets/css/academic.css` 统一维护，覆盖桌面与手机端；原有标题链接保留。作者本人加粗。已有分区、检索和会议标签沿用用户确认信息；更新这些信息时单独核实，不凭记忆补写。
 
-在 Markdown 列表中，简介、作者信息和链接段落使用四个空格缩进，保证它们仍属于同一个论文条目。例如：
+渲染模板在 Markdown 列表中为简介、作者信息和链接使用四个空格缩进，保证它们属于同一个论文条目。新增内容在数据文件中填写，例如：
 
-```markdown
-- ### Formal English Paper Title
-
-    ``已有标签``
-
-    一段中文简介，写清问题、思路、贡献与代表性证据。
-
-    ``会议或期刊 年份`` · **Renchao Li**, Other Authors
-
-    <a href="{{ '/research/example/' | relative_url }}" target="_self">中文解读 →</a> · [PDF]({{ '/assets/pdf/example.pdf' | relative_url }})
+```yaml
+- title: Formal English Paper Title
+  type: conference
+  venue: Conference 2027
+  authors: "**Renchao Li**, Other Authors"
+  badges:
+    en: ["Existing badge"]
+    zh-CN: ["已有标签"]
+  summary:
+    en: >-
+      An English summary preserving the same evidence and experimental conditions.
+    zh-CN: >-
+      一段中文简介，写清问题、思路、贡献与代表性证据。
+  research: /research/example/
+  pdf: /assets/pdf/example.pdf
 ```
 
 ## 3. 独立解读：解释设计选择，贡献融入叙事
@@ -122,22 +141,23 @@
 | 文件/目录 | 用途 |
 | --- | --- |
 | `assets/pdf/` | 论文全文，目录名是复数 `assets` |
-| `_pages/includes/pub.md` | 首页简介、发表信息、解读和 PDF 入口 |
+| `_data/publications.yml` | 共用论文信息、资源入口与中英文简介；`_pages/includes/pub.md` 为渲染模板 |
 | `_pages/research/<slug>.md` | 中文稿与固定 permalink |
 | `images/research/<slug>/` | 该论文的图像资产 |
 | `assets/css/research.css` | 解读页共用样式 |
-| `_pages/includes/news.md` | 用户确认的新闻，和论文介绍分别维护 |
+| `_data/news.yml` | 用户确认的日期与中英文新闻，和论文介绍分别维护 |
+| `_pages/includes/` | 局部 Markdown 模板；通过 `include_relative` 引用，已在 `_config.yml` 排除，不单独输出为页面 |
 | `AGENTS.md`、README | 代理维护要求入口和面向维护者的项目说明 |
 | `_docs/` | 持久维护规范、事实底稿与模板，不作为站点页面 |
-| `_site/research-preview/` | 可重新生成的本地静态预览，不提交 |
+| `_site/redesign-preview/` | 当前完整站点的本地构建产物，可重新生成，不提交 |
 
 选择简短、清楚的英文 slug，发布后保持链接稳定。内部链接和静态资源使用 Liquid `relative_url`；PDF 名含空格时正确编码。返回首页与解读入口使用 `target="_self"`，因为主题设有全局新窗口目标。
 
 模板见 [templates/research-article.md](templates/research-article.md)。复制到 `_pages/research/` 后，替换全部占位内容，保持 front matter 与正文标题一致，并按实际图像填写宽高。不使用的示例图表和内部起稿注释应删除，章节按论文实际内容调整。只有已经确认的正式链接，才加在标题下的元信息中。
 
-有 Ruby/Jekyll 时，优先使用真实站点构建与预览，命令见 [README](../README.md)。`run_server.sh` 使用相同的 `bundle exec jekyll serve` 命令，适用于兼容 shell。环境不支持时可生成与现有样式一致的静态预览，明确它不是完整 Jekyll 构建验证。静态预览应能从统一入口打开各篇文章，图片可嵌入，PDF 和返回入口在本地可用。当前 `_site/research-preview/index.html` 是已生成的本地文件，不是 Git 仓库自带的固定入口，新检出项目时应按需要重新生成。
+有 Ruby/Jekyll 时，优先使用真实站点构建与预览，命令见 [README](../README.md)。`run_server.sh` 使用相同的 `bundle exec jekyll serve` 命令，适用于兼容 shell。当前 `_site/redesign-preview/` 是 2026-11-05 首页改版后用 Jekyll 3.9.0 生成的完整构建产物，不是 Git 仓库自带的固定入口，新检出项目时应按需要重新生成。环境不支持时可生成与现有样式一致的静态预览，并明确它不是完整 Jekyll 构建验证。
 
-不要把事实底稿只放在 `_site/`；该目录会被构建覆盖，也被 Git 忽略。`_docs/` 与 `AGENTS.md` 均在 `_config.yml` 的 `exclude` 中显式排除于站点输出，不加入 `include`。这与 Git 忽略无关：维护文档仍应纳入相应的版本管理。
+不要把事实底稿只放在 `_site/`；该目录会被构建覆盖，也被 Git 忽略。`_docs/`、`AGENTS.md` 与 `_pages/includes/`（局部模板）均在 `_config.yml` 的 `exclude` 中显式排除于站点输出，不加入 `include`。这与 Git 忽略无关：维护文档仍应纳入相应的版本管理。
 
 论文列表标题调整的本地静态预览位于 `_site/publication-preview/index.html`；与研究解读预览一样，它是临时生成的核对产物，不提交，不替代完整 Jekyll 构建验证。
 
@@ -159,9 +179,9 @@
 
 默认先本地修改和预览。用户明确要求“git”“上传”“同步 GitHub”或发布时，视为授权提交并推送本次相关内容；无需重复确认。用户明确说“先不用 git”时，保留本地修改。
 
-发布范围通常包含对应中文稿、`pub.md`、所需 PDF/图片及共用样式的必要改动。`news.md` 仅在任务涉及新闻或用户要求一并提交时纳入，保留用户确认的新闻内容。维护规范本身发生变化时，对应 `_docs/`、AGENTS、README 和必要配置也需要随该维护任务保存；其他已有个人配置、头像、字体或 README 修改，不能因为同在工作区就顺便提交。
+发布范围通常包含对应中文稿、`_data/publications.yml`、所需 PDF/图片及共用样式的必要改动。`_data/news.yml` 仅在任务涉及新闻或用户要求一并提交时纳入，保留用户确认的新闻内容。维护规范本身发生变化时，对应 `_docs/`、AGENTS、README 和必要配置也需要随该维护任务保存；其他已有个人配置、头像、字体或 README 修改，不能因为同在工作区就顺便提交。
 
-README 区分了“只修改列表/新闻”和“新增或修改独立解读”两组提交示例；后一种不能仅暂存 `pub.md`，必须核对正文与资源的提交完整性。
+README 区分了“只修改列表/新闻”和“新增或修改独立解读”两组提交示例；后一种不能仅暂存 `_data/publications.yml`，必须核对正文与资源的提交完整性。
 
 提交前查看暂存文件列表和差异，执行 `git diff --cached --check`。不使用 `git add .`，不强推，不覆盖远程新提交。常规 Git 网络失败时，先定位连接问题；可用已认证的 GitHub Git 数据接口完成同一内容树的非强制发布，但须检查父提交、核对内容并保持本地/远程引用一致，不能输出凭据。
 
@@ -185,11 +205,4 @@ README 区分了“只修改列表/新闻”和“新增或修改独立解读”
 | ASP-DAC 2027 | [empuf.md](../_pages/research/empuf.md) | 约 2,200 字，2 图、1 表 | 制造前自动化评估、阈值/划分与攻击者信息条件 |
 | PRICAI 2026 | [device-wise-calibration.md](../_pages/research/device-wise-calibration.md) | 约 2,700 字，2 图、2 表 | 设备级误报、阈值校准、模型个性化的作用与漂移边界 |
 
-论文列表另有 CIIS 2026 条目，本轮没有对应 PDF 或中文解读；后续有材料时按同一流程补充，不将它计入已完成的四篇。
-
-
-## 2026-11-02：CIIS 论文与双语首页发布补充
-
-CIIS 2026 已补齐双语首页简介、`/research/kv-cache-fingerprints/` 中文解读、原论文图 1、结果表及 PDF 入口，当前共五篇中文解读。论文题名、作者与资源共用 `_data/publications.yml`，简介在 `summary.en` 和 `summary.zh-CN` 分别维护；渲染模板为 `_pages/includes/pub.md`。英文首页为 `/`，中文首页为 `/zh/`，中文解读返回 `/zh/#publications`。发布时同时核对双语首页、正文、资源和返回链接。
-
-本次仅同步论文所需的双语模板、导航与语言资源；新闻、荣誉、头像和演讲资料的其他本地修改仍待后续单独发布。新闻当前沿用已发布的 `_pages/includes/news.md`，未迁移到数据文件。正式 DOI/ISBN 仍是原稿占位信息，不生成链接；原稿分歧及采用口径见事实底稿的 CIIS 节。
+历史状态（2026-10-16）：CIIS 2026 当时仅有列表元数据。2026-11-02 已依据用户新增 PDF 补齐中英文简介、`/research/kv-cache-fingerprints/` 中文解读、原论文图 1 与结果表，当前共五篇中文解读；事实口径与原稿分歧见 `RESEARCH_SOURCE_NOTES.md` 的 CIIS 节。

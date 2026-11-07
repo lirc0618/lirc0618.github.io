@@ -1,32 +1,43 @@
-<section class="academic-section intro-section" id="about-me">
-<div class="section-kicker">{{ locale.kicker }}</div>
-{% capture intro %}{% include_relative {{ locale.intro }} %}{% endcapture %}
-{{ intro | markdownify }}
-<div class="research-tags">{% for tag in locale.tags %}<span>{{ tag }}</span>{% endfor %}</div>
-</section>
+{% assign author = site.author %}
+<div class="home-sections">
+  <section class="academic-section about-section" id="about-me">
+    <h2 class="section-title">{{ locale.about }}</h2>
+    <div class="section-body">
+      {% capture intro %}{% include_relative {{ locale.intro }} %}{% endcapture %}
+      {{ intro | markdownify }}
+    </div>
+  </section>
 
-<section class="academic-section news-section" id="news">
-{% capture news %}{% include_relative includes/news.md %}{% endcapture %}
-{{ news | markdownify }}
-</section>
+  <section class="academic-section news-section" id="news">
+    <h2 class="section-title">{{ locale.news }}</h2>
+    <div class="section-body">
+      {% capture news %}{% include_relative includes/news.md %}{% endcapture %}
+      {{ news | markdownify }}
+    </div>
+  </section>
 
-<section class="academic-section publications-section" id="publications">
-{% capture publications %}{% include_relative includes/pub.md %}{% endcapture %}
-{{ publications | markdownify }}
-</section>
+  <section class="academic-section publications-section" id="publications">
+    <h2 class="section-title">{{ locale.publications }}</h2>
+    <div class="section-body">
+      {% capture publications %}{% include_relative includes/pub.md %}{% endcapture %}
+      {{ publications | markdownify }}
+    </div>
+  </section>
 
-<section class="academic-section service-section" id="service">
-{% capture service %}{% include_relative includes/service.md %}{% endcapture %}
-{{ service | markdownify }}
-</section>
+  <section class="academic-section service-section" id="service">
+    <h2 class="section-title">{{ locale.service }}</h2>
+    <div class="section-body">
+      {% capture service %}{% include_relative includes/service.md %}{% endcapture %}
+      {{ service | markdownify }}
+    </div>
+  </section>
 
-<section class="academic-section honors-section" id="honors">
-{% capture honors %}{% include_relative {{ locale.honors }} %}{% endcapture %}
-{{ honors | markdownify }}
-</section>
-
-<section class="academic-section education-section" id="education">
-{% capture education %}{% include_relative {{ locale.education }} %}{% endcapture %}
-{{ education | markdownify }}
-</section>
+  <section class="academic-section education-section" id="education">
+    <h2 class="section-title">{{ locale.education_title }}</h2>
+    <div class="section-body">
+      {% capture education %}{% include_relative {{ locale.education }} %}{% endcapture %}
+      {{ education | markdownify }}
+    </div>
+  </section>
+</div>
 <footer class="academic-footer">{{ locale.profile.name | default: site.author.name }} <span>·</span> {{ locale.profile.location | default: site.author.location }} <span>·</span> <a href="mailto:{{ site.author.email }}">{{ locale.contact }}</a></footer>

@@ -1,21 +1,13 @@
 # Site Settings
 title                    : "Renchao Li (李仁超)"
-description              : "PhD candidate in HIT"
+description              : "PhD candidate in HITSZ"
 url                      : "https://lirc0618.github.io"
 repository               : "lirc0618/lirc0618.github.io"
-
-# google analytics
-# google_analytics_id      : G-SWFCX99KQZ
-
-# SEO Related
-# google_site_verification : b_BbOIt7d513ZXYDw-YRMicO6O5tthYiouqWDdWjGTU
-# bing_site_verification   : B5AA590E7B9C03956A6F7DEC0F776211
-# baidu_site_verification  : code-ZxFK3f4pfb
 
 # Site Author
 author:
   name             : "Renchao Li (李仁超)"
-  avatar           : "images/wechat_avatar_1024x1024.jpg"
+  avatar           : "images/头像.jpg"
   bio              : "Research focus on Hardware Security, Physical Unclonable Function (PUF), Printed Electronics and AI Authentication."
   location         : "Shenzhen"
   email            : "lirc@stu.hit.edu.cn"
@@ -28,6 +20,8 @@ author:
 include:
   - _pages
 exclude:
+  # Markdown 局部模板只通过 include_relative 引用，不单独输出为页面。
+  - _pages/includes
   # Repository maintenance documents; not part of the public site output.
   - AGENTS.md
   - _docs

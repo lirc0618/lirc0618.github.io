@@ -1,0 +1,21 @@
+{% assign author = site.author %}
+<div class="home-aside">
+  <div class="aside-block">
+    <h3 class="aside-title">{{ locale.interests_label | default: "Research Interests" }}</h3>
+    <ul class="interest-list">
+      {% for tag in locale.tags %}<li>{{ tag }}</li>{% endfor %}
+    </ul>
+  </div>
+  <div class="aside-block">
+    <h3 class="aside-title">{{ locale.contact_label | default: "Contact" }}</h3>
+    <ul class="contact-list">
+      {% if author.location %}<li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i><span>{{ locale.profile.location | default: author.location }}</span></li>{% endif %}
+      <li><i class="fas fa-fw fa-building-columns" aria-hidden="true"></i><span>{{ locale.affiliation }}</span></li>
+      {% if author.email %}<li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i><span>{{ locale.email }}</span></a></li>{% endif %}
+      {% if author.orcid %}<li><a href="{{ author.orcid }}" rel="noopener"><i class="ai ai-orcid-square ai-fw" aria-hidden="true"></i><span>ORCID</span></a></li>{% endif %}
+      {% if author.googlescholar %}<li><a href="{{ author.googlescholar | escape }}" rel="noopener"><i class="ai ai-google-scholar ai-fw" aria-hidden="true"></i><span>{{ locale.scholar }}</span></a></li>{% endif %}
+      {% if author.researchgate %}<li><a href="{{ author.researchgate | escape }}" rel="noopener"><i class="ai ai-researchgate ai-fw" aria-hidden="true"></i><span>ResearchGate</span></a></li>{% endif %}
+      {% if author.github %}<li><a href="https://github.com/{{ author.github }}" rel="noopener"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>{% endif %}
+    </ul>
+  </div>
+</div>

@@ -13,7 +13,7 @@ main:
     url: "/#service"
 
   - title: "Honors and Awards"
-    url: "/#honors"
+    url: "/honors/"
 
   - title: "Education"
     url: "/#education"
@@ -32,7 +32,7 @@ zh-CN:
     url: "/zh/#service"
 
   - title: "荣誉与奖励"
-    url: "/zh/#honors"
+    url: "/zh/honors/"
 
   - title: "教育经历"
     url: "/zh/#education"

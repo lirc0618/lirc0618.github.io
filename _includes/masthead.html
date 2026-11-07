@@ -4,7 +4,7 @@
       <nav id="site-nav" class="greedy-nav" aria-label="{{ locale.navigation_label }}">
         <button type="button" aria-label="{{ locale.menu_label }}"><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="{{ locale.home | append: '#about-me' | relative_url }}" target="_self">{{ locale.name }}<span class="nav-dot">.</span></a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="{{ locale.home | relative_url }}" target="_self">{{ locale.name }}<span class="nav-dot">.</span></a></li>
           {% assign navigation = site.data.navigation[language] | default: site.data.navigation.main %}
           {% for link in navigation %}
             <li class="masthead__menu-item"><a href="{{ link.url | relative_url }}" target="_self">{{ link.title }}</a></li>

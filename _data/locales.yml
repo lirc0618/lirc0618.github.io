@@ -9,7 +9,7 @@ en:
   email: Email
   scholar: Google Scholar
   intro: includes/intro.md
-  honors: includes/honers.md
+  honors: includes/en/honers.md
   education: includes/others.md
   publications: Publications
   journal: Journal
@@ -20,6 +20,18 @@ en:
   conference_reviewer: Conference Reviewer
   reading: 中文解读
   reading_lang: zh-CN
+  slides: Slides
+  about: About Me
+  honors_title: Honors & Awards
+  education_title: Education
+  interests_label: Research Interests
+  contact_label: Contact
+  affiliation: Harbin Institute of Technology (Shenzhen)
+  hero_name: Renchao Li
+  hero_eyebrow: PhD Candidate · Hardware Security & Device Authentication
+  hero_lead: I design and evaluate unclonable hardware identities — from printed-electronics labels to PCB and RFID fingerprints — and study how reliably they hold up outside the lab.
+  profile:
+    name: Renchao Li
   tags:
     - Hardware Security
     - PUFs & Device Fingerprints
@@ -47,6 +59,16 @@ zh-CN:
   conference_reviewer: 会议审稿人
   reading: 中文解读
   reading_lang: zh-CN
+  slides: 幻灯片
+  about: 关于我
+  honors_title: 荣誉与奖励
+  education_title: 教育经历
+  interests_label: 研究方向
+  contact_label: 联系方式
+  affiliation: 哈尔滨工业大学（深圳）
+  hero_name: 李仁超
+  hero_eyebrow: 博士研究生 · 硬件安全与器件身份认证
+  hero_lead: 我研究并评估不可克隆的硬件身份——从印刷电子标签到 PCB、RFID 指纹——以及它们在真实环境中的可靠性。
   profile:
     name: 李仁超（Renchao Li）
     bio: 研究硬件安全、物理不可克隆函数（PUF）、印刷电子与 AI 身份认证。

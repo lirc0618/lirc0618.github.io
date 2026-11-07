@@ -1,0 +1,21 @@
+# Dates and venue years follow the existing author-maintained news.
+- date: "2026.10"
+  text:
+    en: "My first journal paper has been accepted by TIFS 2025."
+    zh-CN: "首篇期刊论文获 TIFS 2025 接收。"
+- date: "2026.09"
+  text:
+    en: "My third conference paper has been accepted by ASP-DAC 2027."
+    zh-CN: "第三篇会议论文获 ASP-DAC 2027 接收。"
+- date: "2026.09"
+  text:
+    en: "My fourth conference paper has been accepted by CIIS 2026."
+    zh-CN: "第四篇会议论文获 CIIS 2026 接收。"
+- date: "2026.08"
+  text:
+    en: "My second conference paper has been accepted by PRICAI 2026."
+    zh-CN: "第二篇会议论文获 PRICAI 2026 接收。"
+- date: "2023.11"
+  text:
+    en: "My first conference paper has been accepted by AsianHOST 2023."
+    zh-CN: "首篇会议论文获 AsianHOST 2023 接收。"

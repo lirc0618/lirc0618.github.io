@@ -10,9 +10,10 @@
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="{% if page.homepage %}is-home{% endif %}{% if page.research_article %} is-article{% endif %}">
 
     {% include masthead.html %}
+    {% if page.homepage %}{% include home-hero.html %}{% endif %}
 
     <div id="main" role="main">
       {% include sidebar.html %}

@@ -1,29 +1,81 @@
-/* Chinese research notes, using the homepage's typography and palette. */
-.research-article { padding: 32px; background: #fff; border: 1px solid var(--line); border-radius: 16px; }
-.research-back { display: inline-block; margin-bottom: 24px; font-size: 13px; }
-.research-article .section-kicker { letter-spacing: .08em; }
-.page__content .research-article h1 { margin: 0 0 12px; padding: 0; border: 0; font-family: inherit; font-size: clamp(25px, 3vw, 34px); line-height: 1.5; }
+/* Chinese research notes — aligned with the homepage editorial system */
+
+.research-article {
+  counter-reset: rsec;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+.research-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 30px;
+  padding: 6px 14px;
+  font-size: var(--fs-meta);
+  font-weight: 500;
+  letter-spacing: .02em;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--line-strong) !important;
+  border-radius: 999px;
+  text-decoration: none !important;
+  transition: color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.research-back:hover { color: var(--accent); border-color: var(--accent) !important; transform: translateX(-2px); }
+.research-article .section-kicker { letter-spacing: .18em; margin-bottom: 14px; }
+.page__content .research-article h1 {
+  margin: 0 0 16px; padding: 0; border: 0;
+  font-family: var(--font-serif); font-weight: 600;
+  font-size: clamp(29px, 3.6vw, 44px); line-height: 1.16; letter-spacing: -.02em; color: var(--ink);
+}
 .page__content .research-article h1::before { display: none; }
-.page__content .research-article h2 { margin: 36px 0 16px; padding: 0; border: 0; font-family: inherit; font-size: 21px; line-height: 1.6; }
-.page__content .research-article p, .page__content .research-article li { font-size: 15px; line-height: 1.95; }
-.research-article p { margin: 0 0 18px; }
-.research-article li { margin-bottom: 12px; }
-.page__content .research-article .research-meta { margin: 0 0 26px; color: var(--muted); font-size: 13px; line-height: 1.8; }
-.page__content .research-article .research-source { color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
-.research-end p:last-child { margin-bottom: 0; }
-.research-figure { display: block; margin: 28px 0; }
-.research-figure img { display: block; width: 100%; max-width: 480px; height: auto; margin: 0 auto; border: 1px solid var(--line); border-radius: 8px; }
+.page__content .research-article h2 {
+  counter-increment: rsec;
+  margin: 46px 0 16px; padding: 0; border: 0;
+  font-family: var(--font-serif); font-weight: 600;
+  font-size: clamp(21px, 2.4vw, 27px); line-height: 1.25; letter-spacing: -.015em; color: var(--ink);
+}
+.page__content .research-article h2::before {
+  content: counter(rsec, decimal-leading-zero);
+  display: block; margin-bottom: 10px;
+  font-family: var(--font-sans); font-size: var(--fs-label); font-weight: 700; letter-spacing: var(--ls-label); color: var(--accent);
+}
+.page__content .research-article p,
+.page__content .research-article li { font-size: var(--fs-body); line-height: 1.85; color: var(--ink-soft); }
+.research-article p, .research-article ul, .research-article ol { margin: 0 0 18px; }
+.research-article > p, .research-article > ul, .research-article > ol { max-width: 76ch; }
+.research-article li { margin-bottom: 8px; }
+.page__content .research-article a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-line); transition: border-color .2s ease, color .2s ease; }
+.page__content .research-article a:hover { color: var(--accent-deep); border-bottom-color: var(--accent); }
+.page__content .research-article strong { color: var(--ink); font-weight: 600; }
+.page__content .research-article .research-meta { margin: 0 0 30px; color: var(--muted); font-size: var(--fs-meta); line-height: 1.8; letter-spacing: .01em; max-width: 76ch; }
+.page__content .research-article .research-source { color: var(--faint); font-size: var(--fs-meta); overflow-wrap: anywhere; }
+.research-figure { display: block; margin: 30px 0; }
+.research-figure img { display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
 .research-figure--wide img { max-width: 100%; }
-.research-figure figcaption { margin: 12px 0 0; color: var(--muted); font-size: 12px; line-height: 1.8; text-align: left; }
-.research-article table { display: table; width: 100%; margin: 22px 0 12px; font-size: 14px; }
-.research-article th, .research-article td { padding: 10px 12px; }
-.research-end { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); }
+.research-figure figcaption { margin: 12px 0 0; color: var(--faint); font-family: var(--font-sans); font-size: var(--fs-meta); line-height: 1.75; text-align: left; }
+.research-article table { display: table; width: 100%; margin: 24px 0 18px; font-family: var(--font-sans); font-size: var(--fs-dense); border-collapse: collapse; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.research-article th, .research-article td { padding: 10px 14px; border-bottom: 1px solid var(--line); text-align: left; }
+.research-article th { background: var(--accent-tint); color: var(--ink); font-weight: 600; }
+.research-article tr:last-child td { border-bottom: 0; }
+.research-article tbody tr:hover td { background: #fbf9f5; }
+.research-article blockquote { margin: 26px 0; padding: 4px 0 4px 20px; border-left: 3px solid var(--accent); color: var(--ink-soft); }
+.research-end { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); }
+.research-end p:last-child { margin-bottom: 0; }
 @media (max-width: 700px) {
-  .research-article { padding: 24px 20px; border-radius: 12px; }
-  .page__content .research-article h2 { font-size: 19px; }
-  .research-article th, .research-article td { padding: 8px 6px; font-size: 12px; }
+  .page__content .research-article h1 { font-size: 26px; }
+  .page__content .research-article h2 { font-size: 20px; margin-top: 34px; }
+  .page__content .research-article p, .page__content .research-article li { font-size: 15px; line-height: 1.8; }
+  .research-figure { margin: 24px 0; }
+  .research-figure img { max-width: 100%; }
+  .research-article table { font-size: 13px; }
+  .research-article th, .research-article td { padding: 8px 8px; }
 }
 @media print {
   .research-article { padding: 0; border: 0; }
   .research-figure, .research-article table { break-inside: avoid; }
+  .page__content .research-article h2::before { color: #000; }
 }
+
