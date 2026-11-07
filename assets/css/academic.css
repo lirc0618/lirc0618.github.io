@@ -444,6 +444,27 @@ a:hover { color: var(--accent-deep); }
 
 /* Honors */
 .honors-section .section-body { max-width: none; }
+/* Homepage teaser: title plus a single entry link, full list lives on /honors/. */
+.honors-teaser {
+  max-width: 60ch;
+  margin: 0 0 18px;
+  font-size: var(--fs-body);
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+.honors-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: var(--fs-body-sm);
+  font-weight: 600;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent-line);
+  padding-bottom: 2px;
+  transition: color .2s ease, border-color .2s ease;
+}
+.honors-more:hover { color: var(--accent-deep); border-bottom-color: var(--accent); }
 .honors-section .section-body > h3 {
   margin: 34px 0 16px !important;
   padding: 0 0 8px !important;

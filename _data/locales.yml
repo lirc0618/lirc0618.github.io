@@ -23,6 +23,8 @@ en:
   slides: Slides
   about: About Me
   honors_title: Honors & Awards
+  honors_intro: Competitions, scholarships, university honors, software copyrights, and certificates — collected on a single page.
+  honors_more: View all honors
   education_title: Education
   interests_label: Research Interests
   contact_label: Contact
@@ -62,6 +64,8 @@ zh-CN:
   slides: 幻灯片
   about: 关于我
   honors_title: 荣誉与奖励
+  honors_intro: 竞赛奖励、奖学金、综合荣誉、软件著作权与证书，统一收录在独立页面。
+  honors_more: 查看全部荣誉
   education_title: 教育经历
   interests_label: 研究方向
   contact_label: 联系方式
