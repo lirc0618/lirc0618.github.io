@@ -15,7 +15,7 @@
     {% include masthead.html %}
     {% if page.homepage %}{% include home-hero.html %}{% endif %}
 
-    <div id="main" role="main">
+    <div id="main" role="main"{% unless page.author_profile or layout.author_profile or page.sidebar %} class="no-sidebar"{% endunless %}>
       {% include sidebar.html %}
     
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">

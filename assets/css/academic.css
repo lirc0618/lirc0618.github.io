@@ -237,6 +237,9 @@ a:hover { color: var(--accent-deep); }
   animation: none;
 }
 #main::after, #main::before { display: none; }
+/* Pages without a sidebar (e.g. standalone /honors/): single centered column. */
+#main.no-sidebar { grid-template-columns: minmax(0, 1fr); max-width: 940px; }
+#main.no-sidebar .page { max-width: none; }
 #main .page { float: none; width: auto; padding: 0; min-width: 0; }
 .page .page__inner-wrap, .page .page__content { float: none; width: 100%; }
 #main .sidebar {
@@ -305,7 +308,7 @@ a:hover { color: var(--accent-deep); }
   letter-spacing: -.02em;
   color: var(--ink);
 }
-.section-title::before {
+.home-sections .section-title::before {
   content: counter(sec, decimal-leading-zero);
   display: block;
   margin-bottom: 12px;
@@ -510,11 +513,17 @@ a:hover { color: var(--accent-deep); }
   background: var(--accent);
   opacity: .55;
 }
+/* Date is secondary metadata; the award itself carries the emphasis. */
 .honors-section .section-body em {
   font-style: normal;
-  font-weight: 600;
-  color: var(--ink);
+  font-weight: 500;
+  color: var(--faint);
+  font-size: .94em;
   font-variant-numeric: tabular-nums;
+}
+.honors-section .section-body strong {
+  font-weight: 650;
+  color: var(--ink);
 }
 
 /* Education */

@@ -14,6 +14,8 @@ en:
   publications: Publications
   journal: Journal
   conference: Conference
+  poster: Posters
+  poster_file: POSTER
   news: News
   service: Academic Service
   journal_reviewer: Journal Reviewer
@@ -23,7 +25,7 @@ en:
   slides: Slides
   about: About Me
   honors_title: Honors & Awards
-  honors_intro: Competitions, scholarships, university honors, software copyrights, and certificates — collected on a single page.
+  honors_intro: Selected honors include the National Scholarship and software copyrights.
   honors_more: View all honors
   education_title: Education
   interests_label: Research Interests
@@ -55,6 +57,8 @@ zh-CN:
   publications: 学术论文
   journal: 期刊论文
   conference: 会议论文
+  poster: 会议海报
+  poster_file: 海报
   news: 近期动态
   service: 学术服务
   journal_reviewer: 期刊审稿人
@@ -64,7 +68,7 @@ zh-CN:
   slides: 幻灯片
   about: 关于我
   honors_title: 荣誉与奖励
-  honors_intro: 竞赛奖励、奖学金、综合荣誉、软件著作权与证书，统一收录在独立页面。
+  honors_intro: 代表性荣誉包括国家奖学金、软件著作权等。
   honors_more: 查看全部荣誉
   education_title: 教育经历
   interests_label: 研究方向

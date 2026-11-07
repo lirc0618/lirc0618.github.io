@@ -113,3 +113,45 @@
   research: /research/pe-oul-2023/
   pdf: /assets/pdf/A%20Lightweight%20Authentication%20Scheme%20with%20PE-Based%20Unclonable%20Label.pdf
   slide: /assets/slides/A%20Lightweight%20Authentication%20Scheme%20with%20PE-Based%20Optical%20Unclonable%20Label.pdf
+
+# ---- Posters (会议海报) ----
+- title: "TrustGate: Stateful Runtime Authorization for Embodied AI Action Streams"
+  type: poster
+  venue: 3rd Greater Bay Area AI for Science PhD Forum
+  date: "2026.10"
+  authors: "**Renchao Li**"
+  badges:
+    en: ["Poster"]
+    zh-CN: ["海报"]
+  summary:
+    en: >-
+      Robot action packets may satisfy individual limits while violating stream
+      rules. TrustGate places a stateful authorization monitor in OP-TEE on a
+      Zynq UltraScale+ MPSoC and retains action history across client sessions.
+      Across five action traces and five mutation classes, all 25 mutation points
+      were denied on each of three board boots, while four encoded clean streams
+      passed in full. In 10,000 authorized-IDLE measurements, paired TIME and
+      SUBMIT calls had a host-observed p99 of 4.75 ms.
+    zh-CN: >-
+      机器人动作包可能各自满足单条限制，却在流层面违反规则。TrustGate 在 Zynq UltraScale+ MPSoC 的 OP-TEE 中部署有状态授权监视器，跨客户端会话保留动作历史。在五条动作轨迹与五类变异条件下，三次板级启动中 25 个变异点全部被拒绝，四条编码后的正常动作流全部通过；一万次授权-IDLE 测量中，配对 TIME 与 SUBMIT 调用的主机侧 p99 为 4.75 毫秒。
+  pdf: /assets/poster/TrustGate_%20Stateful%20Runtime%20Authorization%20for%20Embodied%20AI%20Action%20Streams.pdf
+
+# 有数据时 Publications 下会自动出现 Posters 分组；无数据时该分组不显示。
+# 填写模板（复制以下注释块，去掉 # 号即可生效）：
+#
+# - title: 海报标题（沿用论文正式英文题名）
+#   type: poster
+#   venue: 会议名与年份，例如 CIIS 2026
+#   date: "2026.10"
+#   authors: "**Renchao Li**, 合作者姓名"
+#   badges:
+#     en: ["Poster"]
+#     zh-CN: ["海报"]
+#   summary:
+#     en: >-
+#       一到两句英文说明。
+#     zh-CN: >-
+#       一到两句中文说明。
+#   pdf: /assets/posters/文件名.pdf      # 可选：海报 PDF
+#   slide: /assets/slides/文件名.pdf     # 可选：幻灯片
+#   research: /research/xxx/             # 可选：关联的中文解读页
