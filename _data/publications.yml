@@ -1,5 +1,6 @@
 # Shared paper metadata; only summaries and display badges vary by language.
 - title: Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication
+  title_url: https://ieeexplore.ieee.org/document/11753627/
   type: journal
   venue: TIFS 2025
   authors: "**Renchao Li**, Aijiao Cui, Mingyu Li, Zijie Yan, and Chip-Hong Chang"
