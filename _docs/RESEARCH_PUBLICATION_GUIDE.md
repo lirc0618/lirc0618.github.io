@@ -12,9 +12,11 @@
 
 ## 学术服务分区维护更新（2026-11-05）
 
-首页另设“学术服务 / Academic Service”分区，位于论文与荣誉之间。审稿经历统一维护在 `_data/service.yml`，按 `journals`、`conferences`、`workshops` 分组，由 `_pages/includes/service.md` 和 `_data/locales.yml` 渲染双语标题。三类经历各用一个段落，分别以“Journal Reviewer / 期刊审稿人”“Conference Reviewer / 会议审稿人”“Workshop Reviewer / 研讨会审稿人”开头；段落使用栏目可用宽度自然换行，保留网站原有字体、颜色和链接样式。只添加用户确认的经历；未提供的年份、次数和职务不补写，名称有歧义时保留用户原称。更新时检查两种首页、导航的 `#service` 入口及语言切换的栏目保留行为。
+首页另设“学术服务 / Academic Service”分区，位于论文与荣誉之间。审稿经历统一维护在 `_data/service.yml`，按 `journals`、`conferences`、`workshops` 分组，由 `_pages/includes/service.md` 和 `_data/locales.yml` 渲染。三类经历各用一个段落，两种语言均以“Journal Peer Reviewer”“Conference Peer Reviewer”“Workshop Peer Reviewer”开头；段落使用栏目可用宽度自然换行，保留网站原有字体、颜色和链接样式。只添加用户确认的经历；未提供的年份、次数和职务不补写，名称有歧义时保留用户原称。更新时检查两种首页、导航的 `#service` 入口及语言切换的栏目保留行为。
 
 2026-11-14 更新：每项使用 `name` 和 `url` 字段。`name` 为完整英文名称加括号缩写，会议和研讨会名称不带年份；`url` 为经核实的官网地址。两种语言共用名称和链接，模板将名称渲染为带下划线的官网链接，并在新标签页打开；条目之间统一使用英文逗号加空格分隔。优先使用稳定的会议主入口；没有可用通用入口时使用已核实的届次官网，维护时核对地址，避免同名会议。
+
+两种语言的期刊和会议顺序分别按用户确认的列表维护。每个分组以稳定的条目 ID 为键保存共用名称和链接；`order.en`、`order.zh-CN` 的对应分组填写完整的有序 ID 列表，模板按 `page.lang` 选择。新增条目必须同时更新两份顺序列表，检查每份列表恰好覆盖该组全部条目且没有重复 ID，避免遗漏或语言间链接漂移。
 
 ## 论文接收新闻维护更新（2026-11-14）
 

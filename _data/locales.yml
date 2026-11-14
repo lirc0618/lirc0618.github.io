@@ -18,9 +18,9 @@ en:
   poster_file: POSTER
   news: News
   service: Academic Service
-  journal_reviewer: Journal Reviewer
-  conference_reviewer: Conference Reviewer
-  workshop_reviewer: Workshop Reviewer
+  journal_reviewer: Journal Peer Reviewer
+  conference_reviewer: Conference Peer Reviewer
+  workshop_reviewer: Workshop Peer Reviewer
   reading: 中文解读
   reading_lang: zh-CN
   slides: Slides
@@ -62,9 +62,9 @@ zh-CN:
   poster_file: 海报
   news: 近期动态
   service: 学术服务
-  journal_reviewer: 期刊审稿人
-  conference_reviewer: 会议审稿人
-  workshop_reviewer: 研讨会审稿人
+  journal_reviewer: Journal Peer Reviewer
+  conference_reviewer: Conference Peer Reviewer
+  workshop_reviewer: Workshop Peer Reviewer
   reading: 中文解读
   reading_lang: zh-CN
   slides: 幻灯片

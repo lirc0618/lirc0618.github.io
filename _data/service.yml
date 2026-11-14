@@ -1,39 +1,68 @@
+# Shared venue names and official links; display order is specified per language below.
 journals:
-  - name: IEEE Transactions on Information Forensics and Security (TIFS)
+  tifs:
+    name: IEEE Transactions on Information Forensics and Security (TIFS)
     url: https://signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security
-  - name: "IEEE Transactions on Circuits and Systems I: Regular Papers (TCAS-I)"
+  tcas-i:
+    name: "IEEE Transactions on Circuits and Systems I: Regular Papers (TCAS-I)"
     url: https://ieee-cas.org/publication/TCAS-I
-  - name: IEEE Internet of Things Journal (IoT-J)
+  iot-j:
+    name: IEEE Internet of Things Journal (IoT-J)
     url: https://ieee-iotj.org/
-  - name: IEEE Transactions on Emerging Topics in Computing (TETC)
+  tetc:
+    name: IEEE Transactions on Emerging Topics in Computing (TETC)
     url: https://www.computer.org/csdl/journal/ec
-  - name: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
+  tcad:
+    name: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
     url: https://ieee-ceda.org/publications/tcad
-  - name: ACM Transactions on Design Automation of Electronic Systems (TODAES)
+  todaes:
+    name: ACM Transactions on Design Automation of Electronic Systems (TODAES)
     url: https://dl.acm.org/journal/todaes
-  - name: Microprocessors and Microsystems (MICPRO)
+  micpro:
+    name: Microprocessors and Microsystems (MICPRO)
     url: https://www.sciencedirect.com/journal/microprocessors-and-microsystems
-  - name: Integration, the VLSI Journal (Integration)
+  integration:
+    name: Integration, the VLSI Journal (Integration)
     url: https://www.sciencedirect.com/journal/integration
 conferences:
-  - name: IEEE International Test Conference in Asia (ITC-Asia)
+  itc-asia:
+    name: IEEE International Test Conference in Asia (ITC-Asia)
     url: https://www.itc-asia.info.hiroshima-cu.ac.jp/
-  - name: Asian Hardware Oriented Security and Trust Symposium (AsianHOST)
+  asianhost:
+    name: Asian Hardware Oriented Security and Trust Symposium (AsianHOST)
     url: https://www.asianhost.org/
-  - name: Pacific Rim International Conference on Artificial Intelligence (PRICAI)
+  pricai:
+    name: Pacific Rim International Conference on Artificial Intelligence (PRICAI)
     url: https://2026.pricai.org/
-  - name: International Conference on Microelectronics (ICM)
+  icm:
+    name: International Conference on Microelectronics (ICM)
     url: https://www.ieee-icm.org/
-  - name: Asia and South Pacific Design Automation Conference (ASP-DAC)
+  asp-dac:
+    name: Asia and South Pacific Design Automation Conference (ASP-DAC)
     url: https://www.aspdac.com/
-  - name: IEEE European Test Symposium (ETS)
+  ets:
+    name: IEEE European Test Symposium (ETS)
     url: https://www.ieee-ets.org/
-  - name: Design, Automation & Test in Europe (DATE)
+  date:
+    name: Design, Automation & Test in Europe (DATE)
     url: https://www.date-conference.com/
-  - name: IEEE Guwahati Subsection Conference (GCON)
+  gcon:
+    name: IEEE Guwahati Subsection Conference (GCON)
     url: https://gcon2027.in/
-  - name: International Conference on Security, Privacy and Applied Cryptographic Engineering (SPACE)
+  space:
+    name: International Conference on Security, Privacy and Applied Cryptographic Engineering (SPACE)
     url: https://space2026.isec.tugraz.at/
 workshops:
-  - name: Workshop on Intelligent Methods for Test and Reliability (IMTR)
+  imtr:
+    name: Workshop on Intelligent Methods for Test and Reliability (IMTR)
     url: https://www.gs-imtr.uni-stuttgart.de/workshops/
+
+order:
+  zh-CN:
+    journals: [tifs, iot-j, tcas-i, tetc, tcad, integration, todaes, micpro]
+    conferences: [date, asp-dac, ets, itc-asia, pricai, asianhost, space, icm, gcon]
+    workshops: [imtr]
+  en:
+    journals: [tifs, tcad, tcas-i, iot-j, todaes, tetc, integration, micpro]
+    conferences: [date, asp-dac, ets, itc-asia, asianhost, space, pricai, icm, gcon]
+    workshops: [imtr]

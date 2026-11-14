@@ -9,7 +9,7 @@
 - `_config.yml`：姓名、简介、邮箱、头像和社交链接。
 - `_pages/includes/intro.md`、`_pages/includes/zh/intro.md`：英文、中文个人介绍。
 - `_data/news.yml`：共用新闻日期与中英文文案。论文接收新闻使用“Our paper … has been accepted by … / 我们的论文《…》获……接收”，填写正式英文题名；核实官方论文或会议程序页面后，可用 Markdown 为题名添加链接。
-- `_data/service.yml`：共用期刊、会议和研讨会审稿经历，分别放在 `journals`、`conferences`、`workshops` 中。每项填写 `name`（全称及括号缩写，会议和研讨会不带年份）和 `url`（官网链接）；`_pages/includes/service.md` 将三类经历渲染为独立段落，名称链接在新标签页打开，条目之间用英文逗号加空格分隔，标题译文在 `_data/locales.yml`。段落使用栏目可用宽度自然换行，分区位于论文之后，双语导航与语言切换均支持 `#service`。
+- `_data/service.yml`：共用期刊、会议和研讨会审稿经历，分别放在 `journals`、`conferences`、`workshops` 中，以稳定的条目 ID 为键，每项填写 `name`（全称及括号缩写，会议和研讨会不带年份）和 `url`（官网链接）。`order.en`、`order.zh-CN` 分别用 ID 列表维护两种语言的显示顺序；新增条目时须加入两份顺序列表。`_pages/includes/service.md` 将三类经历渲染为独立段落，两版统一使用 Journal / Conference / Workshop Peer Reviewer 标签（在 `_data/locales.yml` 维护），名称链接在新标签页打开，条目之间用英文逗号加空格分隔。段落使用栏目可用宽度自然换行，分区位于论文之后，双语导航与语言切换均支持 `#service`。
 - `_data/publications.yml`：共用论文题名、作者、发表信息、PDF 和解读路径，以及中英文短简介与标签。
 - `_pages/research/`：独立中文解读，使用固定的 `/research/<slug>/` 链接。
 - `assets/pdf/`：论文全文 PDF。
