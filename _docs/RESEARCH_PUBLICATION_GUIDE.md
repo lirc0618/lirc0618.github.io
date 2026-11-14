@@ -14,6 +14,8 @@
 
 首页另设“学术服务 / Academic Service”分区，位于论文与荣誉之间。审稿经历统一维护在 `_data/service.yml`，按 `journals`、`conferences` 分组，由 `_pages/includes/service.md` 和 `_data/locales.yml` 渲染双语标题。只添加用户确认的经历；未提供的年份、次数和职务不补写，名称有歧义时保留用户原称。更新时检查两种首页、导航的 `#service` 入口及语言切换的栏目保留行为。
 
+2026-11-14 更新：每项使用 `name` 和 `url` 字段。`name` 为完整英文名称加括号缩写，会议名称不带年份；`url` 为经核实的官网地址。两种语言共用名称和链接，模板将名称渲染为带下划线的官网链接，并在新标签页打开。优先使用稳定的会议主入口；没有可用通用入口时使用已核实的届次官网，维护时核对地址，避免同名会议。
+
 ## 首页改版维护更新（2026-11-05）
 
 首页改为编辑式视觉：Newsreader 衬线标题、Inter 正文、暖白底与深青色强调色；标题样式与分区编号统一在 `assets/css/academic.css`，字体文件在 `assets/fonts/`，由 `_includes/head.html` 预加载。`_includes/home-hero.html` 渲染首屏（姓名、研究简介、联系方式按钮、头像），`_includes/home-sidebar.html` 渲染左侧研究方向与联系方式；两者只在 `page.homepage` 时引入。六个分区标题在 `_data/locales.yml`（`about`、`news`、`publications`、`service`、`honors_title`、`education_title`），`_includes/academic-home.html` 负责编号与容器，不要在各 include 里重复写 H1/H2。

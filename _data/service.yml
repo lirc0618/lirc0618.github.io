@@ -1,8 +1,26 @@
 journals:
-  - TIFS
-  - TCAS-I
-  - IoT
+  - name: IEEE Transactions on Information Forensics and Security (TIFS)
+    url: https://signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security
+  - name: "IEEE Transactions on Circuits and Systems I: Regular Papers (TCAS-I)"
+    url: https://ieee-cas.org/publication/TCAS-I
+  - name: IEEE Internet of Things Journal (IoT-J)
+    url: https://ieee-iotj.org/
+  - name: IEEE Transactions on Emerging Topics in Computing (TETC)
+    url: https://www.computer.org/csdl/journal/ec
+  - name: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
+    url: https://ieee-ceda.org/publications/tcad
+  - name: Microprocessors and Microsystems (MICPRO)
+    url: https://www.sciencedirect.com/journal/microprocessors-and-microsystems
+  - name: Integration, the VLSI Journal (Integration)
+    url: https://www.sciencedirect.com/journal/integration
 conferences:
-  - ITC-Asia
-  - AsianHOST
-  - PRICAI
+  - name: IEEE International Test Conference in Asia (ITC-Asia)
+    url: https://www.itc-asia.info.hiroshima-cu.ac.jp/
+  - name: Asian Hardware Oriented Security and Trust Symposium (AsianHOST)
+    url: https://www.asianhost.org/
+  - name: Pacific Rim International Conference on Artificial Intelligence (PRICAI)
+    url: https://2026.pricai.org/
+  - name: International Conference on Microelectronics (ICM)
+    url: https://www.ieee-icm.org/
+  - name: Asia and South Pacific Design Automation Conference (ASP-DAC)
+    url: https://www.aspdac.com/

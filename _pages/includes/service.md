@@ -1,3 +1,3 @@
-**{{ locale.journal_reviewer }}:** {{ site.data.service.journals | join: " · " }}
+**{{ locale.journal_reviewer }}:** {% for venue in site.data.service.journals %}<a href="{{ venue.url | escape }}" target="_blank" rel="noopener noreferrer">{{ venue.name | escape }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
 
-**{{ locale.conference_reviewer }}:** {{ site.data.service.conferences | join: " · " }}
+**{{ locale.conference_reviewer }}:** {% for venue in site.data.service.conferences %}<a href="{{ venue.url | escape }}" target="_blank" rel="noopener noreferrer">{{ venue.name | escape }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}

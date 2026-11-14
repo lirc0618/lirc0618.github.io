@@ -9,7 +9,7 @@
 - `_config.yml`：姓名、简介、邮箱、头像和社交链接。
 - `_pages/includes/intro.md`、`_pages/includes/zh/intro.md`：英文、中文个人介绍。
 - `_data/news.yml`：共用新闻日期与中英文文案。
-- `_data/service.yml`：共用期刊和会议审稿经历；`_pages/includes/service.md` 渲染“学术服务 / Academic Service”分区，标题译文在 `_data/locales.yml`。分区位于论文之后，双语导航与语言切换均支持 `#service`。
+- `_data/service.yml`：共用期刊和会议审稿经历，每项填写 `name`（全称及括号缩写，会议不带年份）和 `url`（官网链接）；`_pages/includes/service.md` 将名称渲染为官网链接，在新标签页打开，标题译文在 `_data/locales.yml`。分区位于论文之后，双语导航与语言切换均支持 `#service`。
 - `_data/publications.yml`：共用论文题名、作者、发表信息、PDF 和解读路径，以及中英文短简介与标签。
 - `_pages/research/`：独立中文解读，使用固定的 `/research/<slug>/` 链接。
 - `assets/pdf/`：论文全文 PDF。
