@@ -20,6 +20,7 @@ en:
   service: Academic Service
   journal_reviewer: Journal Reviewer
   conference_reviewer: Conference Reviewer
+  workshop_reviewer: Workshop Reviewer
   reading: 中文解读
   reading_lang: zh-CN
   slides: Slides
@@ -63,6 +64,7 @@ zh-CN:
   service: 学术服务
   journal_reviewer: 期刊审稿人
   conference_reviewer: 会议审稿人
+  workshop_reviewer: 研讨会审稿人
   reading: 中文解读
   reading_lang: zh-CN
   slides: 幻灯片

@@ -442,6 +442,7 @@ a:hover { color: var(--accent-deep); }
 }
 
 /* Service */
+.service-section .section-body { max-width: none; }
 .service-section .section-body p { font-size: var(--fs-body-sm); }
 .service-section .section-body strong { color: var(--ink); font-weight: 600; }
 

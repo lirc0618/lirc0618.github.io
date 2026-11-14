@@ -9,6 +9,8 @@ journals:
     url: https://www.computer.org/csdl/journal/ec
   - name: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
     url: https://ieee-ceda.org/publications/tcad
+  - name: ACM Transactions on Design Automation of Electronic Systems (TODAES)
+    url: https://dl.acm.org/journal/todaes
   - name: Microprocessors and Microsystems (MICPRO)
     url: https://www.sciencedirect.com/journal/microprocessors-and-microsystems
   - name: Integration, the VLSI Journal (Integration)
@@ -24,3 +26,14 @@ conferences:
     url: https://www.ieee-icm.org/
   - name: Asia and South Pacific Design Automation Conference (ASP-DAC)
     url: https://www.aspdac.com/
+  - name: IEEE European Test Symposium (ETS)
+    url: https://www.ieee-ets.org/
+  - name: Design, Automation & Test in Europe (DATE)
+    url: https://www.date-conference.com/
+  - name: IEEE Guwahati Subsection Conference (GCON)
+    url: https://gcon2027.in/
+  - name: International Conference on Security, Privacy and Applied Cryptographic Engineering (SPACE)
+    url: https://space2026.isec.tugraz.at/
+workshops:
+  - name: Workshop on Intelligent Methods for Test and Reliability (IMTR)
+    url: https://www.gs-imtr.uni-stuttgart.de/workshops/
