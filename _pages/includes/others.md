@@ -1,2 +1,2 @@
-- *2021.08 - Today*, PhD, Harbin Institute of Technology (Shenzhen).
-- *2017.09 - 2021.06*, Undergraduate, Jiangxi University of Science and Technology.
+- *2021.08 - Today*, PhD in Electronic Science and Technology, Harbin Institute of Technology (Shenzhen).
+- *2017.09 - 2021.06*, Undergraduate studies in Electronic Science and Technology, Jiangxi University of Science and Technology.
