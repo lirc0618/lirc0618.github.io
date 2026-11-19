@@ -1,4 +1,10 @@
 # Dates follow the existing author-maintained news; link paper titles only to verified official records.
+- date: "2026.11"
+  text:
+    en: >-
+      Our paper "Q-OpCert: Bounded-Error Output Integrity against Instruction Skips in INT8 CMSIS-NN Convolution" has been accepted by DATE 2027.
+    zh-CN: >-
+      我们的论文《Q-OpCert: Bounded-Error Output Integrity against Instruction Skips in INT8 CMSIS-NN Convolution》获 DATE 2027 接收。
 - date: "2026.10"
   text:
     en: >-

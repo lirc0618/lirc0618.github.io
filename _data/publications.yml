@@ -1,4 +1,4 @@
-# Shared paper metadata; only summaries and display badges vary by language.
+# Shared paper metadata with localized summaries, badges, and conference locations.
 - title: Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication
   title_url: https://ieeexplore.ieee.org/document/11753627/
   type: journal
@@ -22,9 +22,37 @@
   research: /research/pe-ai-tifs/
   pdf: /assets/pdf/Printed%20Electronics%20Based%20Optical%20Unclonable%20Label%20for%20Artificial%20Intelligence%20Authentication.pdf
 
+- title: "Q-OpCert: Bounded-Error Output Integrity against Instruction Skips in INT8 CMSIS-NN Convolution"
+  type: conference
+  venue: DATE 2027
+  location:
+    en: Dresden
+    zh-CN: 德累斯顿
+  authors: "**Renchao Li**, Hao Lu, Zhaoxuan Dong, and Aijiao Cui"
+  badges:
+    en: ["CCF-B", "EI", "Major EDA conference"]
+    zh-CN: ["CCF-B", "EI", "EDA 四大顶会"]
+  summary:
+    en: >-
+      An instruction skip can silently corrupt the output of an INT8 convolution.
+      Q-OpCert protects the CMSIS-NN kernel by checking the multiply–accumulate
+      results with channel checksums, checking requantization with an independent
+      calculation, and verifying the output writeback and its destination. Across
+      1,971 enumerated instruction sites in three Cortex-M33 convolution
+      configurations, none of the 229,525 recorded static instruction-skip trials
+      produced an accepted output more than two least-significant-bit units away
+      from the fault-free result.
+    zh-CN: >-
+      在微控制器上运行 INT8 卷积时，指令跳过可能在不触发异常的情况下改变输出。Q-OpCert 为 CMSIS-NN 卷积内核加入通道校验和与独立的重定量化检查，分别核验乘加累积与重定量化结果，并检查输出是否写入预期地址。在三种 Cortex-M33 卷积配置中，研究枚举了 1,971 个指令位置，记录了 229,525 次静态指令跳过试验，没有一次接受误差超过两个量化刻度（LSB）的输出。
+  research: /research/q-opcert/
+  pdf: /assets/pdf/Q-OpCert_Bounded-Error%20Output%20Integrity%20against%20Instruction%20Skips%20in%20INT8%20CMSIS-NN%20Convolution.pdf
+
 - title: "EMPUF: A Leakage-Controlled Pre-Fabrication Benchmark for PCB Spectral Fingerprints"
   type: conference
   venue: ASP-DAC 2027
+  location:
+    en: Tokyo
+    zh-CN: 东京
   authors: "**Renchao Li**, Hao Lu, and Xiangyu Wang"
   badges:
     en: ["CCF-C", "EI", "Major EDA conference"]
@@ -48,6 +76,9 @@
 - title: Device-wise Conformal False-Alarm Calibration for Federated IoT Intrusion Detection
   type: conference
   venue: PRICAI 2026
+  location:
+    en: Guangzhou
+    zh-CN: 广州
   authors: "**Renchao Li** and Aijiao Cui"
   badges:
     en: ["CCF-C", "EI"]
@@ -66,10 +97,14 @@
       异构 IoT 系统的平均误报率达标，仍可能掩盖个别设备频繁误报的问题。我们在共享联邦检测模型之后，仅利用各设备的正常流量分别校准报警阈值。在 Edge-IIoTset 主实验中，设备间误报率极差从 22.80 降至 1.74 个百分点，同时保持相近的平均攻击检出率；进一步的时间划分与去重测试，也明确了分布变化后需要重新校准的条件。
   research: /research/device-wise-calibration/
   pdf: /assets/pdf/Device-wise%20Conformal%20False-Alarm%20Calibration%20for%20Federated%20IoT%20Intrusion%20Detection.pdf
+  slide: /assets/slides/Device-wise%20Conformal%20False-Alarm%20Calibration%20for%20Federated%20IoT%20Intrusion%20Detection.pdf
 
 - title: How Model Transformations Affect Fingerprints in Transformer Key–Value Caches
   type: conference
   venue: CIIS 2026
+  location:
+    en: Osaka
+    zh-CN: 大阪
   authors: "Xiangyu Wang, Hao Lu, and **Renchao Li**"
   badges:
     en: ["EI"]
@@ -95,6 +130,9 @@
   title_url: https://ieeexplore.ieee.org/document/10409427/
   type: conference
   venue: AsianHOST 2023
+  location:
+    en: Tianjin
+    zh-CN: 天津
   authors: "**Renchao Li**, Zhen Weng, Aijiao Cui, and Gang Qu"
   badges:
     en: ["EI"]

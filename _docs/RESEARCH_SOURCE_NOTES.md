@@ -12,6 +12,7 @@
 | TIFS | [原文](../assets/pdf/Printed%20Electronics%20Based%20Optical%20Unclonable%20Label%20for%20Artificial%20Intelligence%20Authentication.pdf) | [解读](../_pages/research/pe-ai-tifs.md) |
 | EMPUF | [原文](../assets/pdf/EMPUF_%20A%20Leakage-Controlled%20Pre-Fabrication%20Benchmark%20for%20PCB%20Spectral%20Fingerprints.pdf) | [解读](../_pages/research/empuf.md) |
 | Device-wise calibration | [原文](../assets/pdf/Device-wise%20Conformal%20False-Alarm%20Calibration%20for%20Federated%20IoT%20Intrusion%20Detection.pdf) | [解读](../_pages/research/device-wise-calibration.md) |
+| Q-OpCert | [原文](../assets/pdf/Q-OpCert_Bounded-Error%20Output%20Integrity%20against%20Instruction%20Skips%20in%20INT8%20CMSIS-NN%20Convolution.pdf) | [解读](../_pages/research/q-opcert.md) |
 
 ## AsianHOST 2023
 
@@ -96,3 +97,12 @@
 - 第 6 节仍将微调列作未来工作，第 3.1、4.5 节和表 6/7 已包含 SFT/LoRA 结果。公开稿按具体实验报告，保留尚未覆盖的规模、真实缓存移除和任务级验证边界，不写“尚无微调实验”。
 
 日期：2026-11-02；范围：academic-site 本地新增内容；来源：用户提供 PDF 与既有站点元数据；置信度：高（原稿内不一致项已单列）。
+
+## DATE 2027：Q-OpCert（2026-11-19 新增）
+
+依据为用户放入仓库的 6 页匿名稿。会议、录用状态和作者顺序来自用户确认，CCF-B 与 [CCF 目录](https://www.ccf.org.cn/Academic_Evaluation/ARCH_DCP_SS/) 一致。新闻月份根据本轮告知记为 2026.11，[会议官网](https://www.date-conference.com/call-for-papers) 的常规论文通知月份相同。正式论文页待核实。
+
+- 原论文第 III 节及图 1 覆盖乘加校验、独立重定量化、写回和指针检查，以及双路异常状态。图 1 从 PDF 第 2 页原图裁切为 1270 × 545 PNG。
+- 两 LSB 界由参考计算与无故障精确结果最多相差一 LSB、比较允许一 LSB 偏差得出，依赖论文的重定量化算术域以及参考计算和比较正常执行。板上实验作为单独的实证结果呈现。
+- 表 5 统计三种 Cortex-M33 卷积配置，每种枚举 657 个位置，总计 1,971 个配置与位置的组合、229,525 条试验记录，静默超界为零。171 份固件无试验记录、9 份提前终止，另列为可用性结果。14,256 次接受的非零误差均为一或两个 LSB。覆盖范围限于所枚举的二进制与静态单指令跳过。
+- 表 3、表 4 与第 V 节分别报告相对各自基线的周期增幅。STM32F407 的 5.445% 对应双路异常状态版本。最终设计含写回与指针检查，其 44.040% 来自 STM32U575 的小卷积试验。

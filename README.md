@@ -38,7 +38,7 @@
 - [中文解读起稿模板](_docs/templates/research-article.md)：复制到 `_pages/research/` 并替换占位内容。
 - [AGENTS.md](AGENTS.md)：供后续代理自动发现上述约定。
 
-论文 PDF 放在 `assets/pdf/`，中文稿放在 `_pages/research/`，图片放在 `images/research/<slug>/`；首页入口与两种语言的简介统一在 `_data/publications.yml` 维护，`_pages/includes/pub.md` 只负责渲染。普通工作讲清主要问题与证据，重点工作按实际贡献深入展开。默认先本地预览，明确要求 git 或发布后再提交并验证线上页面。
+论文 PDF 放在 `assets/pdf/`，中文稿放在 `_pages/research/`，图片放在 `images/research/<slug>/`；首页入口与两种语言的简介统一在 `_data/publications.yml` 维护，`_pages/includes/pub.md` 只负责渲染。会议论文按届次官网核对城市，在 `location.en` 和 `location.zh-CN` 分别填写英文和中文名，地点标签随首页语言切换。普通工作讲清主要问题与证据，重点工作按实际贡献深入展开。默认先本地预览，明确要求 git 或发布后再提交并验证线上页面。
 
 新增论文只添加一条数据，填写 `summary.en` 和 `summary.zh-CN`、`badges.en` 和 `badges.zh-CN`；题名、作者、年份及资源路径只维护一次。论文题名保留正式英文，已有长篇解读保留中文，两种首页均标明 `中文解读`。中文解读的返回入口和顶部导航通向中文首页；`EN` 通向英文首页，不表示该篇解读已有英文版。
 

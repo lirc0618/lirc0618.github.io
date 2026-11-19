@@ -6,9 +6,11 @@
 
 英文首页为 `/`，中文首页为 `/zh/`。本次将首页论文元数据、短简介和资源入口迁移至 `_data/publications.yml`，新闻迁移至 `_data/news.yml`；`_pages/includes/pub.md`、`news.md` 保留为共用渲染模板，不再直接填写论文或新闻条目。独立中文解读及其固定链接继续保留；返回论文列表使用 `/zh/#publications`。
 
-两种语言共用论文题名、作者、会议/期刊年份、PDF 和研究解读路径。只在 `summary.en`、`summary.zh-CN` 与 `badges.en`、`badges.zh-CN` 分别维护译文。英文简介保持中文稿的实验条件、数字、比较对象与结论强度；既有书目信息中的待核对项不因翻译而视为已经确认。CIIS 条目已于 2026-11-02 补齐简介、PDF 与中文解读；尚缺材料的新条目仅展示已确认元数据。
+两种语言共用论文题名、作者、会议/期刊年份、PDF 和研究解读路径。简介、标签和会议地点分别使用 `summary`、`badges` 和 `location` 下的 `en`、`zh-CN` 字段。英文简介保持中文稿的实验条件、数字、比较对象与结论强度；既有书目信息中的待核对项不因翻译而视为已经确认。CIIS 条目已于 2026-11-02 补齐简介、PDF 与中文解读；尚缺材料的新条目仅展示已确认元数据。
 
 切换按钮固定在导航右侧，不随手机折叠菜单隐藏；有首页栏目锚点时保留同一栏目。未提供英文长解读，不为中文研究页添加虚假的英文替代页面或 `hreflang`。完整新增/修改后检查两种首页及中文解读的导航、PDF、图片和返回入口。
+
+2026-11-19 更新：会议论文用 `_data/publications.yml` 的 `location.en` 和 `location.zh-CN` 维护对应届次的举办城市，地点按官网核对。英文首页显示英文城市名，中文首页显示中文城市名。地点标签沿用会议名称的样式，紧跟会议名称。
 
 ## 学术服务分区维护更新（2026-11-05）
 
@@ -59,6 +61,9 @@
 - title: Formal English Paper Title
   type: conference
   venue: Conference 2027
+  location:
+    en: Tokyo
+    zh-CN: 东京
   authors: "**Renchao Li**, Other Authors"
   badges:
     en: ["Existing badge"]
