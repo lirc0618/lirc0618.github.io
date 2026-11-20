@@ -73,6 +73,17 @@
   research: /research/empuf/
   pdf: /assets/pdf/EMPUF_%20A%20Leakage-Controlled%20Pre-Fabrication%20Benchmark%20for%20PCB%20Spectral%20Fingerprints.pdf
 
+- title: Inferring Transition Conditions from Scan Traces of One-Hot Controllers
+  type: conference
+  venue: AI3T 2026
+  location:
+    en: Hefei
+    zh-CN: 合肥
+  authors: "Zhaoxuan Dong, **Renchao Li**, Hao Lu, and Aijiao Cui"
+  badges:
+    en: ["EI"]
+    zh-CN: ["EI"]
+
 - title: Device-wise Conformal False-Alarm Calibration for Federated IoT Intrusion Detection
   type: conference
   venue: PRICAI 2026

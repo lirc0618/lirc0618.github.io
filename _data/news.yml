@@ -2,36 +2,42 @@
 - date: "2026.11"
   text:
     en: >-
-      Our paper "Q-OpCert: Bounded-Error Output Integrity against Instruction Skips in INT8 CMSIS-NN Convolution" has been accepted by DATE 2027.
+      Our paper "Inferring Transition Conditions from Scan Traces of One-Hot Controllers" has been accepted by **AI3T 2026**.
     zh-CN: >-
-      我们的论文《Q-OpCert: Bounded-Error Output Integrity against Instruction Skips in INT8 CMSIS-NN Convolution》获 DATE 2027 接收。
+      我们的论文《Inferring Transition Conditions from Scan Traces of One-Hot Controllers》获 **AI3T 2026** 接收。
+- date: "2026.11"
+  text:
+    en: >-
+      Our paper "Q-OpCert: Bounded-Error Output Integrity against Instruction Skips in INT8 CMSIS-NN Convolution" has been accepted by **DATE 2027**.
+    zh-CN: >-
+      我们的论文《Q-OpCert: Bounded-Error Output Integrity against Instruction Skips in INT8 CMSIS-NN Convolution》获 **DATE 2027** 接收。
 - date: "2026.10"
   text:
     en: >-
-      Our paper "[Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication](https://ieeexplore.ieee.org/document/11753627/)" has been accepted by IEEE Transactions on Information Forensics and Security (TIFS).
+      Our paper "[Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication](https://ieeexplore.ieee.org/document/11753627/)" has been accepted by **IEEE Transactions on Information Forensics and Security (TIFS)**.
     zh-CN: >-
-      我们的论文《[Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication](https://ieeexplore.ieee.org/document/11753627/)》获 IEEE Transactions on Information Forensics and Security (TIFS) 接收。
+      我们的论文《[Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication](https://ieeexplore.ieee.org/document/11753627/)》获 **IEEE Transactions on Information Forensics and Security (TIFS)** 接收。
 - date: "2026.09"
   text:
     en: >-
-      Our paper "[EMPUF: A Leakage-Controlled Pre-Fabrication Benchmark for PCB Spectral Fingerprints](https://easychair.org/smart-program/ASP-DAC2027/2027-01-27.html#talk:329587)" has been accepted by ASP-DAC 2027.
+      Our paper "[EMPUF: A Leakage-Controlled Pre-Fabrication Benchmark for PCB Spectral Fingerprints](https://easychair.org/smart-program/ASP-DAC2027/2027-01-27.html#talk:329587)" has been accepted by **ASP-DAC 2027**.
     zh-CN: >-
-      我们的论文《[EMPUF: A Leakage-Controlled Pre-Fabrication Benchmark for PCB Spectral Fingerprints](https://easychair.org/smart-program/ASP-DAC2027/2027-01-27.html#talk:329587)》获 ASP-DAC 2027 接收。
+      我们的论文《[EMPUF: A Leakage-Controlled Pre-Fabrication Benchmark for PCB Spectral Fingerprints](https://easychair.org/smart-program/ASP-DAC2027/2027-01-27.html#talk:329587)》获 **ASP-DAC 2027** 接收。
 - date: "2026.09"
   text:
     en: >-
-      Our paper "How Model Transformations Affect Fingerprints in Transformer Key–Value Caches" has been accepted by CIIS 2026.
+      Our paper "How Model Transformations Affect Fingerprints in Transformer Key–Value Caches" has been accepted by **CIIS 2026**.
     zh-CN: >-
-      我们的论文《How Model Transformations Affect Fingerprints in Transformer Key–Value Caches》获 CIIS 2026 接收。
+      我们的论文《How Model Transformations Affect Fingerprints in Transformer Key–Value Caches》获 **CIIS 2026** 接收。
 - date: "2026.08"
   text:
     en: >-
-      Our paper "[Device-wise Conformal False-Alarm Calibration for Federated IoT Intrusion Detection](https://2026.pricai.org/program/paper-sessions)" has been accepted by PRICAI 2026.
+      Our paper "[Device-wise Conformal False-Alarm Calibration for Federated IoT Intrusion Detection](https://2026.pricai.org/program/paper-sessions)" has been accepted by **PRICAI 2026**.
     zh-CN: >-
-      我们的论文《[Device-wise Conformal False-Alarm Calibration for Federated IoT Intrusion Detection](https://2026.pricai.org/program/paper-sessions)》获 PRICAI 2026 接收。
+      我们的论文《[Device-wise Conformal False-Alarm Calibration for Federated IoT Intrusion Detection](https://2026.pricai.org/program/paper-sessions)》获 **PRICAI 2026** 接收。
 - date: "2023.11"
   text:
     en: >-
-      Our paper "[A Lightweight Authentication Scheme with PE-Based Unclonable Label](https://ieeexplore.ieee.org/document/10409427/)" has been accepted by AsianHOST 2023.
+      Our paper "[A Lightweight Authentication Scheme with PE-Based Unclonable Label](https://ieeexplore.ieee.org/document/10409427/)" has been accepted by **AsianHOST 2023**.
     zh-CN: >-
-      我们的论文《[A Lightweight Authentication Scheme with PE-Based Unclonable Label](https://ieeexplore.ieee.org/document/10409427/)》获 AsianHOST 2023 接收。
+      我们的论文《[A Lightweight Authentication Scheme with PE-Based Unclonable Label](https://ieeexplore.ieee.org/document/10409427/)》获 **AsianHOST 2023** 接收。
