@@ -1,4 +1,4 @@
-# Dates follow the existing author-maintained news; link paper titles only to verified official records.
+# Use the month of the stated event and link paper titles to verified official records.
 - date: "2026.11"
   text:
     en: >-
@@ -14,9 +14,9 @@
 - date: "2026.10"
   text:
     en: >-
-      Our paper "[Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication](https://ieeexplore.ieee.org/document/11753627/)" has been accepted by **IEEE Transactions on Information Forensics and Security (TIFS)**.
+      Our paper "[Printed Electronics-Based Optical Unclonable Label for Artificial Intelligence Authentication](https://ieeexplore.ieee.org/document/11753627/)" was published in **IEEE Transactions on Information Forensics and Security (TIFS)**.
     zh-CN: >-
-      我们的论文《[Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication](https://ieeexplore.ieee.org/document/11753627/)》获 **IEEE Transactions on Information Forensics and Security (TIFS)** 接收。
+      我们的论文《[Printed Electronics-Based Optical Unclonable Label for Artificial Intelligence Authentication](https://ieeexplore.ieee.org/document/11753627/)》已发表于 **IEEE Transactions on Information Forensics and Security (TIFS)**。
 - date: "2026.09"
   text:
     en: >-

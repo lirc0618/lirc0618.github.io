@@ -34,8 +34,8 @@
 
 核心叙事：将随机融合标签、AI 开放集认证、可靠性与具体伪造实验连接成更完整的认证研究，按重点工作深入讲解。
 
-- 提供的 PDF 首页仍有稿件编号与 DOI 占位符，参考文献还含 2026 年条目。列表中的 TIFS 2025 沿用用户现有信息；正式书目、当前稿件版本与年份仍应由作者核对。
-- 2026-11-14 已从 [IEEE Signal Processing Society 官方论文介绍](https://signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security/2026/11/printed-electronics-based-optical-unclonable-label-artificial-intelligence-authentication) 的“Read on IEEE Xplore”入口核实正式文献页为 [IEEE Xplore 11753627](https://ieeexplore.ieee.org/document/11753627/)，已用于 Publications 的 `title_url` 和对应 News 题名。官方介绍题名含“Electronics-Based”连字符；站内暂保留作者现有题名。本次仅补齐链接，未据介绍页面路径推断正式卷期、出版年份或 DOI，也未更改原稿实验口径。期刊接收新闻不再显示尚待核对的“TIFS 2025”，接收日期仍为作者维护的 2026.10。
+- 站内 PDF 是原有稿件版本，首页仍有稿件编号与 DOI 占位符。2026-11-14 已核实并链接 [IEEE Xplore 正式文献页](https://ieeexplore.ieee.org/document/11753627/)，当时沿用原有标题、列表年份和录用新闻。
+- 2026-11-24 核实正式书目：*Printed Electronics-Based Optical Unclonable Label for Artificial Intelligence Authentication*，IEEE Transactions on Information Forensics and Security，vol. 21，pp. 9723–9737，2026，DOI `10.1109/TIFS.2026.3746874`。IEEE Xplore 记录发表日期为 2026-10-26。双语 Publications 与中文解读使用正式书目，双语 News 使用正式发表措辞和 `2026.10`。期刊为 JCR Q1，影响因子为 8.7（2026 年发布的 JCR，2025 年数据）。[Crossref 书目](https://api.crossref.org/works/10.1109/TIFS.2026.3746874) · [IEEE 刊名录](https://open.ieee.org/wp-content/uploads/IEEE-Title-List-September-2026-CAPES.pdf)。
 - 300 是主要注册实验的实体标签/身份类别数；六类实验的 6,000 是采集及增强后的图像数据量，并非 6,000 枚实体标签。
 - 99.3% 对应 300 类识别测试；加入开放集判定后的已注册标签准确率为 97%，独立 200 枚未注册标签 TRR 为 100%。不同任务不合并。
 - 第 IV 节给出独立拍摄划分与训练增强规则；六类实验另写三折交叉验证，300 类实验写九折。介绍仅具体解释 300 类的独立拍摄安排，没有把两套交叉验证描述混用。

@@ -8,12 +8,12 @@
 
 - `_config.yml`：姓名、简介、邮箱、头像和社交链接。
 - `_pages/includes/intro.md`、`_pages/includes/zh/intro.md`：英文、中文个人介绍。
-- `_data/news.yml`：共用新闻日期与中英文文案。论文接收新闻使用“Our paper … has been accepted by … / 我们的论文《…》获……接收”，填写正式英文题名；核实官方论文或会议程序页面后，可用 Markdown 为题名添加链接。
+- `_data/news.yml`：共用新闻日期与中英文文案。按实际状态使用接收或正式发表措辞，日期取相应事件的月份。填写正式英文题名，核实官方论文或会议程序页面后可为题名添加链接。
 - `_data/service.yml`：共用期刊、会议和研讨会审稿经历，分别放在 `journals`、`conferences`、`workshops` 中，以稳定的条目 ID 为键，每项填写 `name`（全称及括号缩写，会议和研讨会不带年份）和 `url`（官网链接）。`order.en`、`order.zh-CN` 分别用 ID 列表维护两种语言的显示顺序；新增条目时须加入两份顺序列表。`_pages/includes/service.md` 将三类经历渲染为独立段落，两版统一使用 Journal / Conference / Workshop Peer Reviewer 标签（在 `_data/locales.yml` 维护），名称链接在新标签页打开，条目之间用英文逗号加空格分隔。段落使用栏目可用宽度自然换行，分区位于论文之后，双语导航与语言切换均支持 `#service`。
-- `_data/publications.yml`：共用论文题名、作者、发表信息、PDF 和解读路径，以及中英文短简介与标签。
+- `_data/publications.yml`：共用论文题名、作者、发表信息、PDF 和解读路径，以及中英文短简介与标签。已核实的卷号和页码写入可选的 `citation`，DOI 写入 `doi`。期刊的 JCR 分区和影响因子按同版 JCR 核对；英文会议标签可补充已核实的 ICORE 评级及榜单年份。
 - `_pages/research/`：独立中文解读，使用固定的 `/research/<slug>/` 链接。
 - `assets/pdf/`：论文全文 PDF。
-- `_pages/includes/honers.md`、`_pages/includes/en/honers.md`：中文、英文荣誉（新增条目时同步两份；原稿未确认的日期保留待补）。
+- `_pages/honors.md`、`_pages/zh/honors.md`：英文、中文荣誉页。新增条目时同步两份，原稿未确认的日期保留待补。
 - `_pages/includes/others.md`、`_pages/includes/zh/others.md`：英文、中文教育经历。
 - `_data/locales.yml`：导航以外的界面文字、研究标签和中文侧栏。英文侧栏继续使用 `_config.yml`。
 - `images/`：网站照片；`images/research/<slug>/` 保存各论文的图像素材。
@@ -28,7 +28,7 @@
 
 ## 首页改版（2026-11-05）
 
-首页采用编辑式视觉：Newsreader 衬线标题、Inter 正文、暖白底与深青色强调色。`_includes/home-hero.html` 渲染首屏（姓名、研究简介、邮箱/Scholar/ORCID/GitHub 按钮与头像），`_includes/home-sidebar.html` 渲染左侧“研究方向 / 联系方式”。六个分区（关于我、新闻、论文、学术服务、荣誉、教育）由 `_includes/academic-home.html` 统一编号，中英文共用，标题文字在 `_data/locales.yml`。荣誉分区拆分为中文 `_pages/includes/honers.md` 与英文 `_pages/includes/en/honers.md`，新增条目时两份同步、未确认日期保留待补。`_pages/includes/` 为局部模板，已在 `_config.yml` 排除，不再单独输出为页面。
+首页采用编辑式视觉：Newsreader 衬线标题、Inter 正文、暖白底与深青色强调色。`_includes/home-hero.html` 渲染首屏（姓名、研究简介、邮箱/Scholar/ORCID/GitHub 按钮与头像），`_includes/home-sidebar.html` 渲染左侧“研究方向 / 联系方式”。六个分区（关于我、新闻、论文、学术服务、荣誉、教育）由 `_includes/academic-home.html` 统一编号，中英文共用，标题文字在 `_data/locales.yml`。首页荣誉栏分别链接到 `/honors/` 和 `/zh/honors/`。`_pages/includes/` 为局部模板，已在 `_config.yml` 排除，不再单独输出为页面。
 
 ## 新增论文与中文解读
 

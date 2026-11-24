@@ -15,7 +15,8 @@ author_profile: true
 
 # 从随机墨滴到 AI 认证：面向印刷电子的防伪标签
 
-<p class="research-meta">TIFS 2025 · <a href="{{ '/assets/pdf/Printed%20Electronics%20Based%20Optical%20Unclonable%20Label%20for%20Artificial%20Intelligence%20Authentication.pdf' | relative_url }}">论文 PDF</a></p>
+{% assign tifs_paper = site.data.publications | where: 'research', page.url | first %}
+<p class="research-meta">{{ tifs_paper.venue }} · {{ tifs_paper.citation }} · <a href="https://doi.org/{{ tifs_paper.doi }}">DOI {{ tifs_paper.doi }}</a> · <a href="{{ tifs_paper.pdf | relative_url }}">论文 PDF</a></p>
 
 物理防伪标签需要处理两组相互牵制的要求：制造时，要用同一套工艺批量生产，又要让每枚标签各不相同；认证时，要容忍光照、角度和使用环境带来的变化，又要对伪造品保持敏感。对于印刷传感器、智能包装等低成本产品，这些能力还必须建立在可接受的材料、制造和读取开销之上。
 
@@ -156,10 +157,10 @@ Smart-ID 原型让用户通过手机拍摄标签，并返回身份判定。原�
 
 <div class="research-end" markdown="1">
 
-<p class="research-source">对应论文：Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication<br>
+<p class="research-source">对应论文：<a href="{{ tifs_paper.title_url }}">{{ tifs_paper.title | escape }}</a><br>
 作者：Renchao Li, Aijiao Cui, Mingyu Li, Zijie Yan, Chip-Hong Chang</p>
 
-[阅读原论文 PDF]({{ '/assets/pdf/Printed%20Electronics%20Based%20Optical%20Unclonable%20Label%20for%20Artificial%20Intelligence%20Authentication.pdf' | relative_url }}) · <a href="{{ '/zh/#publications' | relative_url }}" target="_self">返回论文列表 ↑</a>
+[阅读原论文 PDF]({{ tifs_paper.pdf | relative_url }}) · <a href="{{ '/zh/#publications' | relative_url }}" target="_self">返回论文列表 ↑</a>
 
 </div>
 

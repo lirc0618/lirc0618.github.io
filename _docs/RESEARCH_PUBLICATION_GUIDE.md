@@ -12,6 +12,8 @@
 
 2026-11-19 更新：会议论文用 `_data/publications.yml` 的 `location.en` 和 `location.zh-CN` 维护对应届次的举办城市，地点按官网核对。英文首页显示英文城市名，中文首页显示中文城市名。地点标签沿用会议名称的样式，紧跟会议名称。
 
+2026-11-24 更新：已正式发表且书目核实的论文可填写 `citation`（卷号与页码）和 `doi`。两种首页共用这些字段，TIFS 中文解读也从同一条数据读取书目和 PDF 路径。期刊分区与影响因子按同一版 JCR 核对。英文会议条目用 `ICORE 2026: A` 等带榜单版本的标签补充已核实的评级，原有 CCF、EI 等标签继续按各自口径维护。
+
 ## 学术服务分区维护更新（2026-11-05）
 
 首页另设“学术服务 / Academic Service”分区，位于论文与荣誉之间。审稿经历统一维护在 `_data/service.yml`，按 `journals`、`conferences`、`workshops` 分组，由 `_pages/includes/service.md` 和 `_data/locales.yml` 渲染。三类经历各用一个段落，两种语言均以“Journal Peer Reviewer”“Conference Peer Reviewer”“Workshop Peer Reviewer”开头；段落使用栏目可用宽度自然换行，保留网站原有字体、颜色和链接样式。只添加用户确认的经历；未提供的年份、次数和职务不补写，名称有歧义时保留用户原称。更新时检查两种首页、导航的 `#service` 入口及语言切换的栏目保留行为。
@@ -20,15 +22,15 @@
 
 两种语言的期刊和会议顺序分别按用户确认的列表维护。每个分组以稳定的条目 ID 为键保存共用名称和链接；`order.en`、`order.zh-CN` 的对应分组填写完整的有序 ID 列表，模板按 `page.lang` 选择。新增条目必须同时更新两份顺序列表，检查每份列表恰好覆盖该组全部条目且没有重复 ID，避免遗漏或语言间链接漂移。
 
-## 论文接收新闻维护更新（2026-11-14）
+## 论文新闻维护更新（2026-11-24）
 
-中英文新闻使用“Our paper \"正式英文题名\" has been accepted by … / 我们的论文《正式英文题名》获……接收”的写法，不再按个人的第几篇期刊或会议论文计数。新闻日期沿用作者确认的信息，不将网页上线日期当作接收日期。题名可使用 Markdown 链接到已核实的出版社论文页或会议官方程序中的对应条目；没有可核实的论文页面时保留纯文本，不用会议首页冒充论文链接。期刊接收新闻使用期刊名称，不附加尚待核对的出版年份。Publications 的正式论文入口沿用 `title_url` 字段，保留原有 PDF 与中文解读链接。
+录用新闻使用“Our paper \"正式英文题名\" has been accepted by … / 我们的论文《正式英文题名》获……接收”。正式发表新闻使用“Our paper \"正式英文题名\" was published in … / 我们的论文《正式英文题名》已发表于……”。日期对应新闻所述事件。题名可使用 Markdown 链接到已核实的出版社论文页或会议官方程序中的对应条目；只有会议首页可用时，题名保留纯文本。Publications 的正式论文入口沿用 `title_url` 字段，保留原有 PDF 与中文解读链接。
 
 ## 首页改版维护更新（2026-11-05）
 
 首页改为编辑式视觉：Newsreader 衬线标题、Inter 正文、暖白底与深青色强调色；标题样式与分区编号统一在 `assets/css/academic.css`，字体文件在 `assets/fonts/`，由 `_includes/head.html` 预加载。`_includes/home-hero.html` 渲染首屏（姓名、研究简介、联系方式按钮、头像），`_includes/home-sidebar.html` 渲染左侧研究方向与联系方式；两者只在 `page.homepage` 时引入。六个分区标题在 `_data/locales.yml`（`about`、`news`、`publications`、`service`、`honors_title`、`education_title`），`_includes/academic-home.html` 负责编号与容器，不要在各 include 里重复写 H1/H2。
 
-荣誉分区拆成中文 `_pages/includes/honers.md` 与英文 `_pages/includes/en/honers.md` 两份，按类别分组；新增条目时两份同步，原文未确认的年月以“待补 / month TBD”标注，不编造日期。`_pages/includes/` 是局部模板，已在 `_config.yml` 的 `exclude` 中排除，避免被当作独立页面输出；修改后需用真实 Jekyll 构建核对两种首页、五篇解读、字体与图片是否都可访问。
+首页荣誉栏链接到英文 `_pages/honors.md` 和中文 `_pages/zh/honors.md`。荣誉按类别分组，新增条目时同步两份，原文未确认的年月以“待补 / month TBD”标注。`_pages/includes/` 是局部模板，已在 `_config.yml` 的 `exclude` 中排除；修改后用真实 Jekyll 构建核对受影响的双语页面和资源。
 
 ## 1. 每项研究交付两层内容
 
@@ -214,7 +216,7 @@ README 区分了“只修改列表/新闻”和“新增或修改独立解读”
 | 工作 | 中文稿 | 本轮规模 | 写作重点 |
 | --- | --- | --- | --- |
 | AsianHOST 2023 | [pe-oul-2023.md](../_pages/research/pe-oul-2023.md) | 约 2,100 字，2 图、1 表 | 工艺兼容的随机墨滴标签与紧凑指纹 |
-| TIFS 2025，沿用现有书目信息 | [pe-ai-tifs.md](../_pages/research/pe-ai-tifs.md) | 约 4,100 字，5 图、4 表 | 标签机理、AI 开放集认证、可靠性、伪造测试、手机原型及研究推进 |
+| TIFS 2026 | [pe-ai-tifs.md](../_pages/research/pe-ai-tifs.md) | 约 4,100 字，5 图、4 表 | 标签机理、AI 开放集认证、可靠性、伪造测试、手机原型及研究推进 |
 | ASP-DAC 2027 | [empuf.md](../_pages/research/empuf.md) | 约 2,200 字，2 图、1 表 | 制造前自动化评估、阈值/划分与攻击者信息条件 |
 | PRICAI 2026 | [device-wise-calibration.md](../_pages/research/device-wise-calibration.md) | 约 2,700 字，2 图、2 表 | 设备级误报、阈值校准、模型个性化的作用与漂移边界 |
 

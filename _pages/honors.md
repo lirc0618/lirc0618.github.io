@@ -18,13 +18,13 @@ author_profile: false
 
 - *2026.04* **Second Prize** — Hackathon League · Shenzhen University Town Stop, Track 4: Visual Search
 - *2021.12* **Second Prize** — the 18th "Huawei Cup" China Postgraduate Mathematical Contest in Modeling
-- *2020.12* **Third Prize** — 12th National College Student Mathematical Modeling Contest (Non-Mathematics Majors), Popularization Working Committee of the Chinese Mathematical Society
+- *2020.12* **Third Prize** — 12th Chinese Mathematics Competitions for College Students (Non-Mathematics Category), Popularization Working Committee of the Chinese Mathematical Society
 - *2020.06* **National First Prize** — 8th "Teddy Cup" Data Mining Challenge, China University Big Data Education Innovation Alliance
 - *2020.06* **First Prize** — 17th May Day Mathematical Contest in Modeling, Jiangsu Society for Industrial and Applied Mathematics
 - *2019.12* **First Prize (Undergraduate Group)** — National College Student Mathematical Modeling Contest (provincial level); also First Prize (Undergraduate Group) in the Mathematical Modeling category of the 2019 Jiangxi Provincial College Student Science and Technology Innovation and Professional Skills Competition, Jiangxi Provincial Department of Education
-- *2019.11* **First Prize** — 11th National College Student Mathematical Modeling Contest (Non-Mathematics Majors), Popularization Working Committee of the Chinese Mathematical Society
+- *2019.11* **First Prize** — 11th Chinese Mathematics Competitions for College Students (Non-Mathematics Category), Popularization Working Committee of the Chinese Mathematical Society
 - *2019.06* **Third Prize** — 16th May Day Mathematical Contest in Modeling, Jiangsu Society for Industrial and Applied Mathematics
-- *2018.11* **First Prize** — 10th National College Student Mathematical Modeling Contest (Non-Mathematics Majors), Popularization Working Committee of the Chinese Mathematical Society
+- *2018.11* **First Prize** — 10th Chinese Mathematics Competitions for College Students (Non-Mathematics Category), Popularization Working Committee of the Chinese Mathematical Society
 
 #### Internal Competitions
 
@@ -43,10 +43,10 @@ author_profile: false
 
 ### General Honors
 
-- *2025–2026 (month TBD)* **Model Outstanding Communist Youth League Member**
-- *2024–2025 (month TBD)* **Outstanding Communist Youth League Member**
-- *2024–2025 (month TBD)* **Outstanding Student**
-- *2023–2024 (month TBD)* **Outstanding Student**
+- *2026.06* **Model Outstanding Communist Youth League Member** (2025–2026)
+- *2025.06* **Outstanding Communist Youth League Member** (2024–2025)
+- *2025.12* **Outstanding Student** (2024–2025)
+- *2024.12* **Outstanding Student** (2023–2024)
 - *2020.12* **Model Merit Student** — Academic Year 2019–2020, Jiangxi University of Science and Technology
 - *2020.10* **Outstanding Student Cadre** — Communist Youth League Committee of the School of Electrical Engineering and Automation, Jiangxi University of Science and Technology
 - *2020.05* **Model Outstanding Communist Youth League Member** — 2019–2020, Communist Youth League Committee of Jiangxi University of Science and Technology

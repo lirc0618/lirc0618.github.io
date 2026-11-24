@@ -17,7 +17,7 @@
     {{ paper.summary[page.lang] }}
 
 {% endif %}
-    ``{{ paper.venue }}``{% if type == 'conference' and location %} ``{{ location }}``{% endif %}{% if paper.date %} · {{ paper.date }}{% endif %} · {{ paper.authors }}
+    ``{{ paper.venue }}``{% if type == 'conference' and location %} ``{{ location }}``{% endif %}{% if paper.date %} · {{ paper.date }}{% endif %} · {{ paper.authors }}{% if paper.citation %} · {{ paper.citation }}{% endif %}{% if paper.doi %} · [DOI {{ paper.doi }}](https://doi.org/{{ paper.doi }}){% endif %}
 
 {% if paper.research %}
     <a href="{{ paper.research | relative_url }}" target="_self" lang="{{ locale.reading_lang }}" hreflang="zh-CN">{{ locale.reading }} →</a>{% if paper.pdf %} · [{{ pdf_label }}]({{ paper.pdf | relative_url }}){% endif %}{% if paper.slide %} →· <a href="{{ paper.slide | relative_url }}" target="_blank" rel="noopener">{{ locale.slides }}</a>{% endif %}

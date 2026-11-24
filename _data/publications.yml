@@ -1,12 +1,14 @@
 # Shared paper metadata with localized summaries, badges, and conference locations.
-- title: Printed Electronics Based Optical Unclonable Label for Artificial Intelligence Authentication
+- title: Printed Electronics-Based Optical Unclonable Label for Artificial Intelligence Authentication
   title_url: https://ieeexplore.ieee.org/document/11753627/
   type: journal
-  venue: TIFS 2025
+  venue: TIFS 2026
+  citation: "vol. 21, pp. 9723–9737"
+  doi: 10.1109/TIFS.2026.3746874
   authors: "**Renchao Li**, Aijiao Cui, Mingyu Li, Zijie Yan, and Chip-Hong Chang"
   badges:
-    en: ["CAS Zone 1", "JCR Q1", "IF=9.7", "CCF-A", "Leading hardware security journal"]
-    zh-CN: ["中科院1区", "JCR Q1", "IF=9.7", "CCF-A", "硬件安全顶刊"]
+    en: ["JCR Q1", "IF=8.7", "CAS Zone 1", "CCF-A", "Leading hardware security journal"]
+    zh-CN: ["中科院1区", "JCR Q1", "IF=8.7", "CCF-A", "硬件安全顶刊"]
   summary:
     en: >-
       To authenticate low-cost printed electronic products, we use the random
@@ -30,7 +32,7 @@
     zh-CN: 德累斯顿
   authors: "**Renchao Li**, Hao Lu, Zhaoxuan Dong, and Aijiao Cui"
   badges:
-    en: ["CCF-B", "EI", "Major EDA conference"]
+    en: ["ICORE 2026: A", "CCF-B", "EI", "Major EDA conference"]
     zh-CN: ["CCF-B", "EI", "EDA 四大顶会"]
   summary:
     en: >-
@@ -55,7 +57,7 @@
     zh-CN: 东京
   authors: "**Renchao Li**, Hao Lu, and Xiangyu Wang"
   badges:
-    en: ["CCF-C", "EI", "Major EDA conference"]
+    en: ["ICORE 2026: B", "CCF-C", "EI", "Major EDA conference"]
     zh-CN: ["CCF-C", "EI", "EDA 四大顶会"]
   summary:
     en: >-
@@ -81,7 +83,7 @@
     zh-CN: 广州
   authors: "**Renchao Li** and Aijiao Cui"
   badges:
-    en: ["CCF-C", "EI"]
+    en: ["ICORE 2026: B", "CCF-C", "EI"]
     zh-CN: ["CCF-C", "EI"]
   summary:
     en: >-
